@@ -642,7 +642,7 @@ if __name__ == "__main__":
     debug = True
     
     parser = argparse.ArgumentParser()
-    parser.add_argument("--header", type=Path, required=not debug, help="The path to a story_header.div file.")
+    parser.add_argument("--header", type=Path, required=not debug, default=Path(script_dir.parent.joinpath("references", "story_header.div")), help="The path to a story_header.div file.")
     parser.add_argument("-o", "--output", type=Path, default=default_output_path, help="The output file. Defaults to generated/Osi.lua")
     parser.add_argument("--divine", type=Path, default=default_divine_path, help="The path to divine.exe. Only used if a story.div.osi is included.")
     parser.add_argument("--osi", type=Path, help="The path to a save file or story.div.osi to extract Osiris data from.")
@@ -661,7 +661,6 @@ if __name__ == "__main__":
     if debug:
         #args.header = Path("G:/Modding/BG3/_Extracted/_Patches/Patch1/Mods/Gustav/Story/RawFiles/story_header.div")
         args.sort = True
-        args.header = Path(script_dir.parent.joinpath("references", "story_header.div"))
         args.osi = Path(script_dir.parent.joinpath("references", "story.div.osi"))
     
     header_file:Path = args.header

@@ -50160,36 +50160,6 @@ function Osi.DB_LOW_BhaalTemple_OpenedMainDoorFirstTime:Delete(a0) end
 ---@return {[1]: integer}[] 
 function Osi.DB_LOW_BhaalTemple_OpenedMainDoorFirstTime:Get(a0) end
 
----@param a0 GUIDSTRING
-function Osi.DB_LOW_BhaalTemple_OrinBattle_BhaalsStep_Target(a0) end
-
----@param a0 GUIDSTRING?
-function Osi.DB_LOW_BhaalTemple_OrinBattle_BhaalsStep_Target:Delete(a0) end
-
----@param a0 GUIDSTRING?
----@return {[1]: GUIDSTRING}[] 
-function Osi.DB_LOW_BhaalTemple_OrinBattle_BhaalsStep_Target:Get(a0) end
-
----@param a0 CHARACTER
-function Osi.DB_LOW_BhaalTemple_OrinBattle_MarkedForMurder_NotIncapacitatedPlayers(a0) end
-
----@param a0 CHARACTER?
-function Osi.DB_LOW_BhaalTemple_OrinBattle_MarkedForMurder_NotIncapacitatedPlayers:Delete(a0) end
-
----@param a0 CHARACTER?
----@return {[1]: CHARACTER}[] 
-function Osi.DB_LOW_BhaalTemple_OrinBattle_MarkedForMurder_NotIncapacitatedPlayers:Get(a0) end
-
----@param a0 GUIDSTRING
-function Osi.DB_LOW_BhaalTemple_OrinBattle_MarkedForMurder_RandomPlayer(a0) end
-
----@param a0 GUIDSTRING?
-function Osi.DB_LOW_BhaalTemple_OrinBattle_MarkedForMurder_RandomPlayer:Delete(a0) end
-
----@param a0 GUIDSTRING?
----@return {[1]: GUIDSTRING}[] 
-function Osi.DB_LOW_BhaalTemple_OrinBattle_MarkedForMurder_RandomPlayer:Get(a0) end
-
 ---@param a0 CHARACTER
 function Osi.DB_LOW_BhaalTemple_OrinBattle_RitualChanter(a0) end
 
@@ -55169,16 +55139,6 @@ function Osi.DB_LOW_MurderTribunal_Bench:Delete(a0) end
 ---@param a0 ITEM?
 ---@return {[1]: ITEM}[] 
 function Osi.DB_LOW_MurderTribunal_Bench:Get(a0) end
-
----@param a0 GUIDSTRING
-function Osi.DB_LOW_MurderTribunal_BhaalsStep_Target(a0) end
-
----@param a0 GUIDSTRING?
-function Osi.DB_LOW_MurderTribunal_BhaalsStep_Target:Delete(a0) end
-
----@param a0 GUIDSTRING?
----@return {[1]: GUIDSTRING}[] 
-function Osi.DB_LOW_MurderTribunal_BhaalsStep_Target:Get(a0) end
 
 ---@param a0 FLAG
 function Osi.DB_LOW_MurderTribunal_CancelValeriaChainedBehaviorFlags(a0) end
@@ -81109,16 +81069,6 @@ function Osi.DB_SteelWatchFoudnry_WreckedWatcher:Delete(a0) end
 function Osi.DB_SteelWatchFoudnry_WreckedWatcher:Get(a0) end
 
 ---@param a0 GUIDSTRING
-function Osi.DB_SteelWatchFoundry_MissileTargets(a0) end
-
----@param a0 GUIDSTRING?
-function Osi.DB_SteelWatchFoundry_MissileTargets:Delete(a0) end
-
----@param a0 GUIDSTRING?
----@return {[1]: GUIDSTRING}[] 
-function Osi.DB_SteelWatchFoundry_MissileTargets:Get(a0) end
-
----@param a0 GUIDSTRING
 function Osi.DB_SteelWatchFoundry_SUBTRiggers(a0) end
 
 ---@param a0 GUIDSTRING?
@@ -82976,19 +82926,6 @@ function Osi.DB_TWN_BrewerData_Cosmetic:Delete(a0, a1, a2) end
 ---@param a2 string?
 ---@return {[1]: string, [2]: string, [3]: string}[] 
 function Osi.DB_TWN_BrewerData_Cosmetic:Get(a0, a1, a2) end
-
----@param a0 string
----@param a1 string
-function Osi.DB_TWN_BrewerData_Honor(a0, a1) end
-
----@param a0 string?
----@param a1 string?
-function Osi.DB_TWN_BrewerData_Honor:Delete(a0, a1) end
-
----@param a0 string?
----@param a1 string?
----@return {[1]: string, [2]: string}[] 
-function Osi.DB_TWN_BrewerData_Honor:Get(a0, a1) end
 
 ---@param a0 TRIGGER
 ---@param a1 TRIGGER
@@ -88438,22 +88375,6 @@ function Osi.DB_VoloSignBook:Delete(a0, a1) end
 ---@param a1 ITEMROOT?
 ---@return {[1]: ITEMROOT, [2]: ITEMROOT}[] 
 function Osi.DB_VoloSignBook:Get(a0, a1) end
-
----@param a0 number
----@param a1 number
----@param a2 number
-function Osi.DB_WYR_AnsurPhase2Environment_EventTrigger_ActivePosition(a0, a1, a2) end
-
----@param a0 number?
----@param a1 number?
----@param a2 number?
-function Osi.DB_WYR_AnsurPhase2Environment_EventTrigger_ActivePosition:Delete(a0, a1, a2) end
-
----@param a0 number?
----@param a1 number?
----@param a2 number?
----@return {[1]: number, [2]: number, [3]: number}[] 
-function Osi.DB_WYR_AnsurPhase2Environment_EventTrigger_ActivePosition:Get(a0, a1, a2) end
 
 ---@param a0 integer
 function Osi.DB_WYR_Axe_AmbushDialogEnded(a0) end
