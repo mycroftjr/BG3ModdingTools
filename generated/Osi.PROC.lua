@@ -3,25 +3,6 @@
 
 if Osi == nil then Osi = {} end
 
----@param a0 ITEM
----@param a1 GUIDSTRING
----@param a2 number
----@param a3 number
----@param a4 integer
----@param a5 string
----@param a6 integer
-function Osi.ItemMoveTo(a0, a1, a2, a3, a4, a5, a6) end
-
----@param a0 ITEM
----@param a1 number
----@param a2 number
----@param a3 number
----@param a4 number
----@param a5 number
----@param a6 string
----@param a7 integer
-function Osi.ItemMoveToPosition(a0, a1, a2, a3, a4, a5, a6, a7) end
-
 function Osi.PROC_Achievements_BG3_EndingAchievementsHook() end
 
 function Osi.PROC_Achievements_BG3_EndingAchievementsHook_EarlyEndInclusive() end
@@ -10564,8 +10545,6 @@ function Osi.PROC_LOW_BhaalTemple_Butler_Setup() end
 ---@param a0 CHARACTER
 function Osi.PROC_LOW_BhaalTemple_Butler_StartDialog(a0) end
 
-function Osi.PROC_LOW_BhaalTemple_CastMarkedForMurder() end
-
 function Osi.PROC_LOW_BhaalTemple_CastRitualSpell() end
 
 function Osi.PROC_LOW_BhaalTemple_CheckAbductionPossibleAreaDB() end
@@ -16146,8 +16125,6 @@ function Osi.PROC_State_Remove(a0, a1, a2) end
 
 function Osi.PROC_SteelWatchFoundry_AntechamberBaneitesLeave() end
 
-function Osi.PROC_SteelWatchFoundry_CastHellfireAtAllTargetsWithDelay() end
-
 function Osi.PROC_SteelWatchFoundry_OutsideWatchersLeave() end
 
 ---@param a0 CHARACTER
@@ -18300,8 +18277,6 @@ function Osi.PROC_WYR_SkeletalDragon_NovaCam() end
 ---@param a0 CHARACTER
 function Osi.PROC_WYR_SkeletalDragon_RemoveHidden(a0) end
 
-function Osi.PROC_WYR_SkeletalDragon_RemoveImmortality() end
-
 function Osi.PROC_WYR_SmugglersCave_Attackers_Setup() end
 
 function Osi.PROC_WYR_SmugglersCave_BeforeFightSpotting_Setup() end
@@ -18550,9 +18525,3 @@ function Osi.PROC_Z_Shared_GameModeStarted(a0, a1, a2) end
 function Osi.PROC_ZhentDungeon_ExpedientEscape(a0) end
 
 function Osi.PROC_ZhentDungeon_Zhent01_AttackBarrel() end
-
----@param a0 GUIDSTRING
----@param a1 number
----@param a2 string
----@param a3 integer
-function Osi.SetHitpointsPercentage(a0, a1, a2, a3) end

@@ -8273,6 +8273,12 @@ function Osi.QRY_GOB_WolfPens_Imprisoned() end
 ---@return boolean 
 function Osi.QRY_GOB_WolfPens_Imprisoned__DEF__() end
 
+---@return boolean 
+function Osi.QRY_GUSX_7116_UsInColony() end
+
+---@return boolean 
+function Osi.QRY_GUSX_7116_UsInColony__DEF__() end
+
 ---@param a0 CHARACTER
 ---@return boolean 
 function Osi.QRY_GUS_306683_ExcludeCharacter(a0) end
@@ -11150,14 +11156,6 @@ function Osi.QRY_LOW_SteelWatchFoundry_PickPlayersForOutcomeDialog() end
 
 ---@return boolean 
 function Osi.QRY_LOW_SteelWatchFoundry_PickPlayersForOutcomeDialog__DEF__() end
-
----@param a0 CHARACTER
----@return boolean 
-function Osi.QRY_LOW_SteelWatchFoundry_TitanHasPendingMissiles(a0) end
-
----@param a0 CHARACTER
----@return boolean 
-function Osi.QRY_LOW_SteelWatchFoundry_TitanHasPendingMissiles__DEF__(a0) end
 
 ---@param a0 CHARACTER
 ---@return boolean 
