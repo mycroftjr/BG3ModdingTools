@@ -11159,6 +11159,14 @@ function Osi.QRY_LOW_SteelWatchFoundry_PickPlayersForOutcomeDialog__DEF__() end
 
 ---@param a0 CHARACTER
 ---@return boolean 
+function Osi.QRY_LOW_SteelWatchFoundry_TitanHasPendingMissiles(a0) end
+
+---@param a0 CHARACTER
+---@return boolean 
+function Osi.QRY_LOW_SteelWatchFoundry_TitanHasPendingMissiles__DEF__(a0) end
+
+---@param a0 CHARACTER
+---@return boolean 
 function Osi.QRY_LOW_TressymGetsNextLoot(a0) end
 
 ---@param a0 CHARACTER

@@ -105,6 +105,7 @@ ManualOverloadFix = {
     "RequestActiveRoll": {5: ["roller:CHARACTER", "rollSubject:GUIDSTRING", "rollType:string", "difficultyClassID:DIFFICULTYCLASS", "event:string"]},
     "RequestPassiveRoll": {5: ["roller:CHARACTER", "rollSubject:GUIDSTRING", "rollType:string", "difficultyClassID:DIFFICULTYCLASS", "event:string"]},
     "Use": {3: ["character:CHARACTER", "item:ITEM", "event:string"]},
+    "ActivateTrade": {4: ["player:CHARACTER", "trader:CHARACTER", "canSell:integer", "tradeMode:TRADEMODE"]}
 }
 
 # These functions have Procs with more variables than the Call. Only the additional arguments are given.
@@ -114,9 +115,9 @@ ProcExtensions = {
 }
 
 # The functions with these refs should not be output at all
-IgnoreRefs = {
-    3794: ["ItemMoveToPosition", 8], # deprecated, just calls the 7-arg version without the 8th
-    3790: ["ItemMoveTo", 7], # deprecated, just calls the 6-arg version without the 7th
+IgnoreProcs = {
+    "ItemMoveToPosition": 8, # deprecated, just calls the 7-arg version without the 8th
+    "ItemMoveTo": 7, # deprecated, just calls the 6-arg version without the 7th
 }
 
 types:dict[int, 'OsirisType'] = {}
@@ -581,11 +582,8 @@ def run(header_file:Path, output_path:Path, osi_file:Path, lslib_dll:Path, do_so
             raise AssertionError("extract_osiris.py did not error but did not return OsirisResults!")
         print(f"Scanning {len(story.procs)} PROCs")
         for call in story.procs:
-            if call.ref in IgnoreRefs:
-                if call.name != IgnoreRefs[call.ref][0]:
-                    raise AssertionError(f"Ref {call.ref} changed from {IgnoreRefs[call.ref]} to {call}?!")
-                else:
-                    continue
+            if IgnoreProcs.get(call.name) == len(call.params):
+                continue
 
             existing = function_map.get(call.name, None)
             if existing or do_extra:

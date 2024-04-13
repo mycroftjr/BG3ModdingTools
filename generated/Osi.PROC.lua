@@ -9257,6 +9257,8 @@ function Osi.PROC_GUS31884_OverrideOutcomeDialogue() end
 
 function Osi.PROC_GUS31884_StartOutcomeDialogue() end
 
+function Osi.PROC_GUSX_7116_RemoveUs() end
+
 ---@param a0 ITEM
 ---@param a1 TRIGGER
 function Osi.PROC_GUS_312395_CheckSkullUpdate(a0, a1) end
@@ -10544,6 +10546,8 @@ function Osi.PROC_LOW_BhaalTemple_Butler_Setup() end
 
 ---@param a0 CHARACTER
 function Osi.PROC_LOW_BhaalTemple_Butler_StartDialog(a0) end
+
+function Osi.PROC_LOW_BhaalTemple_CastMarkedForMurder() end
 
 function Osi.PROC_LOW_BhaalTemple_CastRitualSpell() end
 
@@ -16125,6 +16129,8 @@ function Osi.PROC_State_Remove(a0, a1, a2) end
 
 function Osi.PROC_SteelWatchFoundry_AntechamberBaneitesLeave() end
 
+function Osi.PROC_SteelWatchFoundry_CastHellfireAtAllTargetsWithDelay() end
+
 function Osi.PROC_SteelWatchFoundry_OutsideWatchersLeave() end
 
 ---@param a0 CHARACTER
@@ -18276,6 +18282,8 @@ function Osi.PROC_WYR_SkeletalDragon_NovaCam() end
 
 ---@param a0 CHARACTER
 function Osi.PROC_WYR_SkeletalDragon_RemoveHidden(a0) end
+
+function Osi.PROC_WYR_SkeletalDragon_RemoveImmortality() end
 
 function Osi.PROC_WYR_SmugglersCave_Attackers_Setup() end
 
