@@ -289,6 +289,17 @@ class CallDefinition:
             txt = "\n".join([x.export_as_overload(self.parameters) for x in self.overloads])
             return txt + "\n"
         return ""
+    
+    def export_alias(self):
+        params_str = ""
+        i = 0
+        count = len(self.parameters)
+        for p in self.parameters:
+            i = i + 1
+            params_str += f"{p.get_lua_name()}:{p.export_type(self.name)}"
+            if (i < count):
+                params_str += ", "
+        return f"---@alias Osiris{self.name}Callback fun({params_str})"
 
     def export(self):
         params_doc = self.export_overloads()
@@ -529,23 +540,41 @@ if Osi == nil then Osi = {{}} end
     output_str = osi_template.format(types=types_str, aliases=aliases_str, enums=enums_str, queries=queries_str, calls=calls_str)
 
     export_file(output_path, output_str)
-
-    def export(defs, file):
-        defs_str = ""
-        for func in defs:	
-            defs_str += '{}\n'.format(func.export())
-
-        output_str = f"""---@meta
----@diagnostic disable
-
-if Osi == nil then Osi = {{}} end
-{defs_str}"""
-
-        export_file(output_path.parent.joinpath(file), output_str)
     
     if len(event_definitions) > 0:
+        events_callbacks_str = ""
+        events_str = ""
+        events_func_str = ""
         events = get_sorted(event_definitions)
-        export(events, "Osi.Events.lua")
+        for func in events:
+            events_func_str += f"\t{func.export()}\n"
+            field_str = f"---@field RegisterListener fun(id:\"{func.name}\", arity:{len(func.parameters)}, eventType:OsirisEventType, callback:Osiris{func.name}Callback):integer"
+            events_str += f"{field_str}\n"
+            events_callbacks_str += '{}\n'.format(func.export_alias())
+
+        events_output_str = f"""---@meta
+---@diagnostics disable
+
+if Ext == nil then Ext = {{}} end
+
+-- #region Callbacks
+{events_callbacks_str}
+-- #endregion
+
+---@class Ext_Osiris
+---@field RegisterListener fun(id:string, arity:integer, eventType:OsirisEventType, callback:function):integer
+---@field UnregisterListener fun(subscriberId:integer)
+{events_str}Ext.Osiris = {{}}
+"""
+        export_file(output_path.parent.joinpath("Ext.Osiris.RegisterListener.lua"), events_output_str)
+        
+        events_output_str = f"""---@meta
+---@diagnostics disable
+
+if Osi == nil then Osi = {{}} end
+{events_func_str}"""
+
+        export_file(output_path.parent.joinpath("Osi.Events.lua"), events_output_str)
         
         arity_entries = "\n".join([f"\t{x.name} = {len(x.parameters)}," for x in events])
         event_arity_output = f"""local EventArity = {{
