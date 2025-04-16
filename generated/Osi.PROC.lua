@@ -392,6 +392,16 @@ function Osi.PROC_BG3_SavegamePatch_GUS315579_SetActiveScratchDB() end
 function Osi.PROC_BG3_SavegamePatch_GUS317286() end
 
 ---@param a0 GUIDSTRING
+---@param a1 string
+---@param a2 GUIDSTRING
+function Osi.PROC_BG3_SavegamePatch_GUSX9416_AddCharacterParticipant(a0, a1, a2) end
+
+---@param a0 GUIDSTRING
+---@param a1 string
+---@param a2 GUIDSTRING
+function Osi.PROC_BG3_SavegamePatch_GUSX9416_AddItemParticipant(a0, a1, a2) end
+
+---@param a0 GUIDSTRING
 ---@param a1 LEVELTEMPLATE
 ---@param a2 string
 function Osi.PROC_BG3_SavegamePatches_SetUnloadTag(a0, a1, a2) end
@@ -455,6 +465,14 @@ function Osi.PROC_BUGFIX_AddAndPatch_DB_GLO_DefeatCounter_AllPermaDefeatedGlobal
 ---@param a1 FLAG
 function Osi.PROC_BUGFIX_AddAndPatch_DB_PermaDefeatedFlag(a0, a1) end
 
+function Osi.PROC_BUGFIX_ClearUnwelcomeVisitorCrimeHostility() end
+
+function Osi.PROC_BUGFIX_END_AddAllyAbility() end
+
+function Osi.PROC_BUGFIX_END_GiveNightsongIsobel() end
+
+function Osi.PROC_BUGFIX_END_SetupNightsongIsobelAllyHouse() end
+
 function Osi.PROC_BUGFIX_FillDirectlySetAnubisConfigs() end
 
 function Osi.PROC_BUGFIX_GUS305511_FixBusyDialog() end
@@ -475,6 +493,8 @@ function Osi.PROC_BUGFIX_GUS315706_TryRemoveWaitingDialogs() end
 
 function Osi.PROC_BUGFIX_GUS318707_FixBusyDialog() end
 
+function Osi.PROC_BUGFIX_GUSX_11438_ReturnGlut() end
+
 ---@param a0 integer
 function Osi.PROC_BUGFIX_GUSX_7034_CheckCrime(a0) end
 
@@ -482,6 +502,8 @@ function Osi.PROC_BUGFIX_GUSX_7034_CheckCrime(a0) end
 function Osi.PROC_BUGFIX_GUSX_7034_StopCrime(a0) end
 
 function Osi.PROC_BUGFIX_GUSX_7120_FixPrison() end
+
+function Osi.PROC_BUGFIX_GUSX_9144_CheckFactions() end
 
 ---@param a0 CHARACTER
 function Osi.PROC_BUGFIX_GUS_307672_StuckInWyllDeath(a0) end
@@ -496,6 +518,8 @@ function Osi.PROC_BUGFIX_GUS_313467_CheckReachedCity() end
 
 function Osi.PROC_BUGFIX_GUS_314524_CheckNightsongPosition() end
 
+function Osi.PROC_BUGFIX_GUS_7940_MoveGortashGauntletsToPlayer() end
+
 function Osi.PROC_BUGFIX_LOW_FixSurvivorsPermaHostility_DollDestroyedWhenMayrinaTakenByHag() end
 
 ---@param a0 CHARACTER
@@ -505,6 +529,8 @@ function Osi.PROC_BUGFIX_MOO_TieflingPrisonersAnubis(a0, a1) end
 ---@param a0 CHARACTER
 ---@param a1 CHARACTER
 function Osi.PROC_BUGFIX_Marker_GUSX_1226_ClearPrison(a0, a1) end
+
+function Osi.PROC_BUGFIX_ORI_InitMoonriseMinthara() end
 
 function Osi.PROC_BUGFIX_Patch5_AnubisConfigCheck() end
 
@@ -613,12 +639,35 @@ function Osi.PROC_Bottomless_ForceUpdateEttercap(a0, a1) end
 ---@param a0 CHARACTER
 function Osi.PROC_BroodingSovereign_SendMyconidCorpseEvent(a0) end
 
+function Osi.PROC_BroodingSovereign_TeleportHome() end
+
 function Osi.PROC_Bugfix_GUS301878() end
 
 ---@param a0 CHARACTER
 function Osi.PROC_Bugfix_GUS318910_CheckForStuckSleep(a0) end
 
+---@param a0 CHARACTER
+function Osi.PROC_Bugfix_GUSX_12582_FixBrokenCharacter(a0) end
+
 function Osi.PROC_Bugfix_GUSX_591_MoveNonFoodToCampChest() end
+
+---@param a0 string
+---@param a1 string
+function Osi.PROC_Bugfix_GUSX_7714_FixAllyStatus(a0, a1) end
+
+---@param a0 CHARACTER
+function Osi.PROC_Bugfix_GUSX_7714_FixDeadAllyInParty(a0) end
+
+---@param a0 CHARACTER
+---@param a1 FACTION
+---@param a2 string
+function Osi.PROC_Bugfix_GUSX_9144_CheckChangeFactionWithBugfixMarker(a0, a1, a2) end
+
+---@param a0 CHARACTER
+---@param a1 FACTION
+function Osi.PROC_Bugfix_GUSX_9144_WYR_CheckChangeFaction(a0, a1) end
+
+function Osi.PROC_Bugfix_GUSX_9480_CheckIfDBShouldBeDeleted() end
 
 ---@param a0 string
 function Osi.PROC_CAMPDEBUGBOOK_InitialPopulate(a0) end
@@ -2326,6 +2375,9 @@ function Osi.PROC_CRIME_StoryActionHandled(a0, a1) end
 ---@param a1 integer
 function Osi.PROC_CRIME_StoryActionHandled_Reset(a0, a1) end
 
+---@param a0 integer
+function Osi.PROC_CRIME_StoryActionHandled_ResetAll(a0) end
+
 ---@param a0 CHARACTER
 ---@param a1 string
 ---@param a2 integer
@@ -2463,6 +2515,8 @@ function Osi.PROC_CampSwapped(a0, a1) end
 ---@param a0 GUIDSTRING
 function Osi.PROC_Camp_Act2_NightsongShadowHeart_SelectCFM(a0) end
 
+function Osi.PROC_Camp_AllPlayersLeave() end
+
 ---@param a0 CHARACTER
 ---@param a1 TRIGGER
 function Osi.PROC_Camp_CamperPosOverride(a0, a1) end
@@ -2480,6 +2534,10 @@ function Osi.PROC_Camp_CheckSleepMomentsLoopDone() end
 function Osi.PROC_Camp_ClearCampFaction(a0) end
 
 function Osi.PROC_Camp_ClearDisruptiveStatusses() end
+
+---@param a0 CHARACTER
+---@param a1 string
+function Osi.PROC_Camp_ClearFade(a0, a1) end
 
 ---@param a0 FLAG
 function Osi.PROC_Camp_DebugQNight_ForceRequirements(a0) end
@@ -3241,6 +3299,10 @@ function Osi.PROC_CorpseCleanup_CreateLootbag(a0) end
 function Osi.PROC_CorpseCleanup_RemoveCorpse(a0) end
 
 ---@param a0 CHARACTER
+---@param a1 ITEM
+function Osi.PROC_CorpseCleanup_SetupBackpack(a0, a1) end
+
+---@param a0 CHARACTER
 function Osi.PROC_CorpseLooting_BecameLootable(a0) end
 
 ---@param a0 CHARACTER
@@ -3713,6 +3775,8 @@ function Osi.PROC_Crime_Guards_TryFindReinforcements(a0, a1, a2, a3, a4) end
 ---@param a1 CHARACTER
 function Osi.PROC_Crime_HandleEvidenceIfArrester(a0, a1) end
 
+function Osi.PROC_Crime_RemoveAITags() end
+
 ---@param a0 CHARACTER
 function Osi.PROC_Crime_RestoreAndClearNegativeStatuses(a0) end
 
@@ -4065,6 +4129,9 @@ function Osi.PROC_DEN_CapturedGoblin_TryAvenge(a0) end
 
 ---@param a0 CHARACTER
 function Osi.PROC_DEN_CapturedGoblin_TryBreakOath(a0) end
+
+---@param a0 CHARACTER
+function Osi.PROC_DEN_CapturedGoblin_TryRemovePartyFollower(a0) end
 
 ---@param a0 CHARACTER
 function Osi.PROC_DEN_CapturedGoblin_UpdateDead(a0) end
@@ -4828,6 +4895,9 @@ function Osi.PROC_Debug_ActSkipped(a0) end
 ---@param a0 string
 function Osi.PROC_Debug_ActivateActScripting(a0) end
 
+---@param a0 CHARACTER
+function Osi.PROC_Debug_AddOriginToFirstAvatar(a0) end
+
 function Osi.PROC_Debug_CheckCampLoc() end
 
 ---@param a0 FLAG
@@ -5365,6 +5435,9 @@ function Osi.PROC_DoStartOneShotAD(a0, a1) end
 function Osi.PROC_Downed(a0) end
 
 ---@param a0 ITEM
+function Osi.PROC_DropdownLadder_Drop(a0) end
+
+---@param a0 ITEM
 function Osi.PROC_DruidLair_CancelDoorOpening(a0) end
 
 function Osi.PROC_DrunkGoblin_SendDrunkGoblinFriendsToTables() end
@@ -5392,7 +5465,8 @@ function Osi.PROC_END_AllyAbilities_SpawnAllyAtPosition(a0, a1, a2, a3, a4) end
 function Osi.PROC_END_AllyAbilities_StartVossArenaCamera(a0) end
 
 ---@param a0 string
-function Osi.PROC_END_AllyAbilities_SummonsRemaining(a0) end
+---@param a1 string
+function Osi.PROC_END_AllyAbilities_SummonsRemaining(a0, a1) end
 
 ---@param a0 CHARACTER
 function Osi.PROC_END_AllyAbilities_TryStartSummonsAD(a0) end
@@ -5411,6 +5485,8 @@ function Osi.PROC_END_Armoury_StartDoorDialog(a0) end
 
 function Osi.PROC_END_BUGFIX_ClearHagScenes() end
 
+function Osi.PROC_END_BUGFIX_GameFinale_GodGaleFix() end
+
 function Osi.PROC_END_BrainBattle_BrainDestructionScene() end
 
 ---@param a0 integer
@@ -5420,6 +5496,9 @@ function Osi.PROC_END_BrainBattle_CheckMindGameOver(a0) end
 function Osi.PROC_END_BrainBattle_CheckRemoveFollower(a0) end
 
 function Osi.PROC_END_BrainBattle_ClearBrainBattle() end
+
+---@param a0 CHARACTER
+function Osi.PROC_END_BrainBattle_ClearCustomPlayerClasses(a0) end
 
 function Osi.PROC_END_BrainBattle_ClearEmperorOrpheus() end
 
@@ -6483,6 +6562,8 @@ function Osi.PROC_FOR_CourierDog_Aura_FindClosestItem(a0, a1) end
 ---@param a3 integer
 function Osi.PROC_FOR_CourierDog_ClearFetch(a0, a1, a2, a3) end
 
+function Osi.PROC_FOR_CourierDog_ClearOldFetch() end
+
 ---@param a0 CHARACTER
 ---@param a1 GUIDSTRING
 function Osi.PROC_FOR_CourierDog_DropObjectIfNeeded(a0, a1) end
@@ -6779,6 +6860,9 @@ function Osi.PROC_FallbackCamp_CheckSpecialConditions(a0) end
 
 function Osi.PROC_FallbackCamp_DefineTeleporterCamps() end
 
+---@param a0 CHARACTER
+function Osi.PROC_FallbackCamp_EnsureResurrectedInCamp(a0) end
+
 function Osi.PROC_FallbackCamp_EnsureResurrections() end
 
 ---@param a0 string
@@ -6789,6 +6873,8 @@ function Osi.PROC_FallbackCamp_LeftCamp(a0) end
 
 ---@param a0 FLAG
 function Osi.PROC_FallbackCamp_OnCampNightQueued(a0) end
+
+function Osi.PROC_FallbackCamp_PlayerLeft() end
 
 ---@param a0 CHARACTER
 ---@param a1 string
@@ -8009,6 +8095,10 @@ function Osi.PROC_GLO_NarrativeCombat_EndCombat(a0) end
 
 ---@param a0 string
 ---@param a1 GUIDSTRING
+function Osi.PROC_GLO_NarrativeCombat_IDDestroyed(a0, a1) end
+
+---@param a0 string
+---@param a1 GUIDSTRING
 function Osi.PROC_GLO_NarrativeCombat_IDGenerated(a0, a1) end
 
 ---@param a0 string
@@ -8084,6 +8174,9 @@ function Osi.PROC_GLO_PaladinOathbreaker_BrokeOath(a0, a1) end
 ---@param a0 CHARACTER
 ---@param a1 integer
 function Osi.PROC_GLO_PaladinOathbreaker_BrokeOath_Internal(a0, a1) end
+
+---@param a0 integer
+function Osi.PROC_GLO_PaladinOathbreaker_Crown_Resist(a0) end
 
 ---@param a0 DIALOGRESOURCE
 ---@param a1 integer
@@ -8420,8 +8513,28 @@ function Osi.PROC_GLO_ShadowheartRecruitmentInit() end
 function Osi.PROC_GLO_SpellCast_CleanUp(a0, a1) end
 
 ---@param a0 CHARACTER
+---@param a1 ITEM
+---@param a2 EQUIPMENTSLOT
+function Osi.PROC_GLO_Spells_BladesongCheckEquippedItem(a0, a1, a2) end
+
+---@param a0 CHARACTER
+function Osi.PROC_GLO_Spells_BladesongCheckUnarmed(a0) end
+
+---@param a0 CHARACTER
+---@param a1 string
+function Osi.PROC_GLO_Spells_BladesongInitCheck(a0, a1) end
+
+---@param a0 CHARACTER
+function Osi.PROC_GLO_Spells_BladesongRemoveStatuses(a0) end
+
+---@param a0 CHARACTER
 ---@param a1 CHARACTER
 function Osi.PROC_GLO_Spells_CheckIsStillDominated(a0, a1) end
+
+---@param a0 ITEM
+---@param a1 string
+---@param a2 CHARACTER
+function Osi.PROC_GLO_Spells_CheckRemoveBladesongStatus(a0, a1, a2) end
 
 ---@param a0 CHARACTER
 function Osi.PROC_GLO_Spells_DominateDisableForceUpdate(a0) end
@@ -8636,7 +8749,8 @@ function Osi.PROC_GLO_UnequipAllWeapons(a0) end
 
 function Osi.PROC_GLO_Us_Summon_Dismiss() end
 
-function Osi.PROC_GLO_VossSewers_VossTeleportedOutAfterAttacked_Hook() end
+---@param a0 CHARACTER
+function Osi.PROC_GLO_VossSewers_VossTeleportedOutAfterAttacked_Hook(a0) end
 
 ---@param a0 CHARACTER
 function Osi.PROC_GLO_Voss_PermanentHostilityAgainstTarget(a0) end
@@ -9338,6 +9452,8 @@ function Osi.PROC_GUS31884_StartOutcomeDialogue() end
 
 ---@param a0 string
 function Osi.PROC_GUS320052_CheckTieflingDefeatState(a0) end
+
+function Osi.PROC_GUSX_13442_ResetBladesong() end
 
 function Osi.PROC_GUSX_7116_RemoveUs() end
 
@@ -10843,6 +10959,9 @@ function Osi.PROC_LOW_BhaalTemple_InWorldAbduction_WaitForPlayersFallback() end
 
 function Osi.PROC_LOW_BhaalTemple_InWorldAbductions_Disable() end
 
+---@param a0 CHARACTER
+function Osi.PROC_LOW_BhaalTemple_KillVictim(a0) end
+
 function Osi.PROC_LOW_BhaalTemple_Lieutenant_Init() end
 
 function Osi.PROC_LOW_BhaalTemple_MainDoor_Init() end
@@ -11141,6 +11260,8 @@ function Osi.PROC_LOW_CountingHouseAlarmTriggered(a0, a1, a2) end
 ---@param a3 TAG
 function Osi.PROC_LOW_CountingHouseAlarmTriggered(a0, a1, a2, a3) end
 
+function Osi.PROC_LOW_CountingHouse_AfterHeistScene() end
+
 function Osi.PROC_LOW_CountingHouse_AllGuardsHostileOnLongRest() end
 
 ---@param a0 integer
@@ -11180,6 +11301,8 @@ function Osi.PROC_LOW_DevilsFee_AddButlerHat() end
 function Osi.PROC_LOW_DevilsFee_CloseStore() end
 
 function Osi.PROC_LOW_DevilsFee_DisableTrapByOwner() end
+
+function Osi.PROC_LOW_DevilsFee_EvaluatePosition() end
 
 function Osi.PROC_LOW_DevilsFee_PatchPortalStatus() end
 
@@ -11715,6 +11838,10 @@ function Osi.PROC_LOW_OrinRitual_DeathTarget_TriggerTurnEndDelay(a0) end
 ---@param a1 string
 function Osi.PROC_LOW_OskarsBeloved_CheckCombatInRoom(a0, a1) end
 
+---@param a0 CHARACTER
+---@param a1 CHARACTER
+function Osi.PROC_LOW_OskarsBeloved_CheckFateNoble(a0, a1) end
+
 function Osi.PROC_LOW_OskarsBeloved_CheckFreedKerri() end
 
 ---@param a0 TRIGGER
@@ -11730,7 +11857,9 @@ function Osi.PROC_LOW_OskarsBeloved_CheckStopRoomTimer(a0, a1) end
 function Osi.PROC_LOW_OskarsBeloved_DebugReadyState() end
 
 ---@param a0 CHARACTER
-function Osi.PROC_LOW_OskarsBeloved_HandleDuelSceneInterruption(a0) end
+---@param a1 CHARACTER
+---@param a2 string
+function Osi.PROC_LOW_OskarsBeloved_HandleDuelSceneInterruption(a0, a1, a2) end
 
 function Osi.PROC_LOW_OskarsBeloved_HandleKerriLeaves() end
 
@@ -12106,6 +12235,8 @@ function Osi.PROC_LOW_SorcerousSundries_ChooseNightsongRewardStep() end
 ---@param a0 CHARACTER
 ---@param a1 CHARACTER
 function Osi.PROC_LOW_SorcerousSundries_ClerkWarnsBannedPlayers(a0, a1) end
+
+function Osi.PROC_LOW_SorcerousSundries_ContinueNSSetup() end
 
 ---@param a0 CHARACTER
 function Osi.PROC_LOW_SorcerousSundries_EnabledUsedTeleporter(a0) end
@@ -13389,6 +13520,8 @@ function Osi.PROC_ORI_DarkUrge_SetupMurderOfAlfira() end
 
 function Osi.PROC_ORI_DarkUrge_TeleportAlfiraVictim() end
 
+function Osi.PROC_ORI_DarkUrge_TryDeathRitualCircleVictim() end
+
 ---@param a0 string
 function Osi.PROC_ORI_DateCommands_FillDumpString(a0) end
 
@@ -13472,6 +13605,8 @@ function Osi.PROC_ORI_Gale_ReactTaraDeath() end
 
 function Osi.PROC_ORI_Gale_RecheckMagicItemApprovalIPRD() end
 
+function Osi.PROC_ORI_Gale_RecheckNeedsmagicItemIPRD() end
+
 function Osi.PROC_ORI_Gale_Rejoin() end
 
 ---@param a0 CHARACTER
@@ -13514,6 +13649,8 @@ function Osi.PROC_ORI_Gale_TrySetupDeathvoice() end
 function Osi.PROC_ORI_Gale_VisitedTrackedRegion(a0) end
 
 function Osi.PROC_ORI_GortashConfrontation_DecideKarlachsFate() end
+
+function Osi.PROC_ORI_Halsin_RestoreToSCLCamp() end
 
 function Osi.PROC_ORI_Jaheira_PatchLeavingIfMinscUnrecruitable() end
 
@@ -15316,6 +15453,15 @@ function Osi.PROC_SHA_RelicJournal_GemUpdate() end
 ---@param a0 ITEM
 function Osi.PROC_SHA_RelicJournal_GemUpdateCheck(a0) end
 
+---@param a0 CHARACTER
+---@param a1 integer
+function Osi.PROC_SHA_SaveGamePatchGems_CheckLootedGems(a0, a1) end
+
+---@param a0 CHARACTER
+function Osi.PROC_SHA_SaveGamePatchGems_CountGemsNeeded(a0) end
+
+function Osi.PROC_SHA_SaveGamePatchGems_FindPlayer() end
+
 function Osi.PROC_SHA_ShadowheartConfrontCheck() end
 
 function Osi.PROC_SHA_Shadowheart_RegisterNightsongPrisonOM() end
@@ -15534,6 +15680,8 @@ function Osi.PROC_SavegamePatch_GUS308150() end
 
 function Osi.PROC_SavegamePatch_GUS314213_ClearCurse() end
 
+function Osi.PROC_SavegamePatch_GUSX7721_FixHeistDialogDidntStart() end
+
 function Osi.PROC_SavegamePatch_GUS_302552() end
 
 function Osi.PROC_SavegamePatches_CleanUpDBs() end
@@ -15545,8 +15693,6 @@ function Osi.PROC_SavegamePatches_CleanUpSummons() end
 function Osi.PROC_SavegamePatches_CleanUpSummonsTemplatesDB() end
 
 function Osi.PROC_SavegamePatches_CleanUpTriggersForSummons() end
-
-function Osi.PROC_SavegamePatches_GUS_315783() end
 
 ---@param a0 string
 ---@param a1 CHARACTER
@@ -17165,11 +17311,6 @@ function Osi.PROC_UND_BroodingSovereign_GoHome(a0) end
 
 ---@param a0 CHARACTER
 function Osi.PROC_UND_BroodingSovereign_Join(a0) end
-
----@param a0 DIALOGRESOURCE
----@param a1 CHARACTER
----@param a2 CHARACTER
-function Osi.PROC_UND_BroodingSovereign_LeaveDialog(a0, a1, a2) end
 
 ---@param a0 CHARACTER
 function Osi.PROC_UND_BroodingSovereign_QuestUpdate_LeftUND(a0) end

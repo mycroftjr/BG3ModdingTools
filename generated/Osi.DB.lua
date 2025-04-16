@@ -487,6 +487,16 @@ function Osi.DB_Achievements_Completed:Delete(a0, a1) end
 function Osi.DB_Achievements_Completed:Get(a0, a1) end
 
 ---@param a0 integer
+function Osi.DB_Achievements_DEBUG_Debug29(a0) end
+
+---@param a0 integer?
+function Osi.DB_Achievements_DEBUG_Debug29:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_Achievements_DEBUG_Debug29:Get(a0) end
+
+---@param a0 integer
 function Osi.DB_Achievements_DEBUG_DisplayProgress(a0) end
 
 ---@param a0 integer?
@@ -2389,6 +2399,16 @@ function Osi.DB_BUGFIX_310178_DoFix:Delete(a0) end
 ---@return {[1]: CHARACTER}[] 
 function Osi.DB_BUGFIX_310178_DoFix:Get(a0) end
 
+---@param a0 integer
+function Osi.DB_BUGFIX_AstarionVampireSHConfession_Fix(a0) end
+
+---@param a0 integer?
+function Osi.DB_BUGFIX_AstarionVampireSHConfession_Fix:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_BUGFIX_AstarionVampireSHConfession_Fix:Get(a0) end
+
 ---@param a0 CHARACTER
 ---@param a1 string
 function Osi.DB_BUGFIX_DirectlySetAnubis(a0, a1) end
@@ -2411,6 +2431,16 @@ function Osi.DB_BUGFIX_DoFix:Delete(a0) end
 ---@param a0 string?
 ---@return {[1]: string}[] 
 function Osi.DB_BUGFIX_DoFix:Get(a0) end
+
+---@param a0 CHARACTER
+function Osi.DB_BUGFIX_END_NightsongIsobel(a0) end
+
+---@param a0 CHARACTER?
+function Osi.DB_BUGFIX_END_NightsongIsobel:Delete(a0) end
+
+---@param a0 CHARACTER?
+---@return {[1]: CHARACTER}[] 
+function Osi.DB_BUGFIX_END_NightsongIsobel:Get(a0) end
 
 ---@param a0 integer
 function Osi.DB_BUGFIX_GOB_RestoreMindflayerDB(a0) end
@@ -2550,6 +2580,46 @@ function Osi.DB_BUGFIX_GUSX_1068_PlayerWithIncorrectFlag:Delete(a0) end
 ---@return {[1]: CHARACTER}[] 
 function Osi.DB_BUGFIX_GUSX_1068_PlayerWithIncorrectFlag:Get(a0) end
 
+---@param a0 integer
+function Osi.DB_BUGFIX_GUSX_10784_FixUsStory(a0) end
+
+---@param a0 integer?
+function Osi.DB_BUGFIX_GUSX_10784_FixUsStory:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_BUGFIX_GUSX_10784_FixUsStory:Get(a0) end
+
+---@param a0 integer
+function Osi.DB_BUGFIX_GUSX_11438_FixGlut(a0) end
+
+---@param a0 integer?
+function Osi.DB_BUGFIX_GUSX_11438_FixGlut:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_BUGFIX_GUSX_11438_FixGlut:Get(a0) end
+
+---@param a0 string
+function Osi.DB_BUGFIX_GUSX_7940(a0) end
+
+---@param a0 string?
+function Osi.DB_BUGFIX_GUSX_7940:Delete(a0) end
+
+---@param a0 string?
+---@return {[1]: string}[] 
+function Osi.DB_BUGFIX_GUSX_7940:Get(a0) end
+
+---@param a0 CHARACTER
+function Osi.DB_BUGFIX_GUSX_8227_DuergarReKnockOut(a0) end
+
+---@param a0 CHARACTER?
+function Osi.DB_BUGFIX_GUSX_8227_DuergarReKnockOut:Delete(a0) end
+
+---@param a0 CHARACTER?
+---@return {[1]: CHARACTER}[] 
+function Osi.DB_BUGFIX_GUSX_8227_DuergarReKnockOut:Get(a0) end
+
 ---@param a0 GUIDSTRING
 ---@param a1 string
 function Osi.DB_BUGFIX_GUSX_862(a0, a1) end
@@ -2616,6 +2686,16 @@ function Osi.DB_BUGFIX_GUXS_862_Fixed:Delete(a0) end
 ---@return {[1]: GUIDSTRING}[] 
 function Osi.DB_BUGFIX_GUXS_862_Fixed:Get(a0) end
 
+---@param a0 FLAG
+function Osi.DB_BUGFIX_GaleNotGodFlags(a0) end
+
+---@param a0 FLAG?
+function Osi.DB_BUGFIX_GaleNotGodFlags:Delete(a0) end
+
+---@param a0 FLAG?
+---@return {[1]: FLAG}[] 
+function Osi.DB_BUGFIX_GaleNotGodFlags:Get(a0) end
+
 ---@param a0 integer
 function Osi.DB_BUGFIX_HarvardItemsBGO_DoFix(a0) end
 
@@ -2665,6 +2745,25 @@ function Osi.DB_BUGFIX_Marker:Delete(a0, a1, a2) end
 ---@return {[1]: string, [2]: GUIDSTRING, [3]: integer}[] 
 function Osi.DB_BUGFIX_Marker:Get(a0, a1, a2) end
 
+---@param a0 string
+---@param a1 CHARACTER
+---@param a2 DIALOGRESOURCE
+---@param a3 FLAG
+function Osi.DB_BUGFIX_Marker(a0, a1, a2, a3) end
+
+---@param a0 string?
+---@param a1 CHARACTER?
+---@param a2 DIALOGRESOURCE?
+---@param a3 FLAG?
+function Osi.DB_BUGFIX_Marker:Delete(a0, a1, a2, a3) end
+
+---@param a0 string?
+---@param a1 CHARACTER?
+---@param a2 DIALOGRESOURCE?
+---@param a3 FLAG?
+---@return {[1]: string, [2]: CHARACTER, [3]: DIALOGRESOURCE, [4]: FLAG}[] 
+function Osi.DB_BUGFIX_Marker:Get(a0, a1, a2, a3) end
+
 ---@param a0 GUIDSTRING
 function Osi.DB_BUGFIX_Marker_300198_RestoredDLCItems(a0) end
 
@@ -2706,6 +2805,19 @@ function Osi.DB_BUGFIX_Marker_GUS309397:Delete(a0, a1, a2) end
 ---@param a2 LEVELTEMPLATE?
 ---@return {[1]: string, [2]: GUIDSTRING, [3]: LEVELTEMPLATE}[] 
 function Osi.DB_BUGFIX_Marker_GUS309397:Get(a0, a1, a2) end
+
+---@param a0 CHARACTER
+---@param a1 DIALOGRESOURCE
+function Osi.DB_BUGFIX_Marker_GUSX9096(a0, a1) end
+
+---@param a0 CHARACTER?
+---@param a1 DIALOGRESOURCE?
+function Osi.DB_BUGFIX_Marker_GUSX9096:Delete(a0, a1) end
+
+---@param a0 CHARACTER?
+---@param a1 DIALOGRESOURCE?
+---@return {[1]: CHARACTER, [2]: DIALOGRESOURCE}[] 
+function Osi.DB_BUGFIX_Marker_GUSX9096:Get(a0, a1) end
 
 ---@param a0 GUIDSTRING
 ---@param a1 GUIDSTRING
@@ -2818,6 +2930,19 @@ function Osi.DB_Banishment_Applied:Delete(a0, a1) end
 ---@param a1 CHARACTER?
 ---@return {[1]: CHARACTER, [2]: CHARACTER}[] 
 function Osi.DB_Banishment_Applied:Get(a0, a1) end
+
+---@param a0 string
+---@param a1 string
+function Osi.DB_Bard_DLC_SongsMapping(a0, a1) end
+
+---@param a0 string?
+---@param a1 string?
+function Osi.DB_Bard_DLC_SongsMapping:Delete(a0, a1) end
+
+---@param a0 string?
+---@param a1 string?
+---@return {[1]: string, [2]: string}[] 
+function Osi.DB_Bard_DLC_SongsMapping:Get(a0, a1) end
 
 ---@param a0 ITEMROOT
 ---@param a1 string
@@ -3954,6 +4079,22 @@ function Osi.DB_CAMP_TastingParty_PotentialTargetsInCamp:Delete(a0) end
 ---@param a0 CHARACTER?
 ---@return {[1]: CHARACTER}[] 
 function Osi.DB_CAMP_TastingParty_PotentialTargetsInCamp:Get(a0) end
+
+---@param a0 string
+---@param a1 string
+---@param a2 GUIDSTRING
+function Osi.DB_CAMP_ThanielAlternatePositions(a0, a1, a2) end
+
+---@param a0 string?
+---@param a1 string?
+---@param a2 GUIDSTRING?
+function Osi.DB_CAMP_ThanielAlternatePositions:Delete(a0, a1, a2) end
+
+---@param a0 string?
+---@param a1 string?
+---@param a2 GUIDSTRING?
+---@return {[1]: string, [2]: string, [3]: GUIDSTRING}[] 
+function Osi.DB_CAMP_ThanielAlternatePositions:Get(a0, a1, a2) end
 
 ---@param a0 integer
 function Osi.DB_CAMP_WaitForEveryoneAwake(a0) end
@@ -5424,6 +5565,19 @@ function Osi.DB_COL_ElderBrainADs_TimerRunning:Delete(a0) end
 ---@param a0 integer?
 ---@return {[1]: integer}[] 
 function Osi.DB_COL_ElderBrainADs_TimerRunning:Get(a0) end
+
+---@param a0 TRIGGER
+---@param a1 TRIGGER
+function Osi.DB_COL_Elevator_ChasmKillTriggers(a0, a1) end
+
+---@param a0 TRIGGER?
+---@param a1 TRIGGER?
+function Osi.DB_COL_Elevator_ChasmKillTriggers:Delete(a0, a1) end
+
+---@param a0 TRIGGER?
+---@param a1 TRIGGER?
+---@return {[1]: TRIGGER, [2]: TRIGGER}[] 
+function Osi.DB_COL_Elevator_ChasmKillTriggers:Get(a0, a1) end
 
 ---@param a0 integer
 ---@param a1 ITEM
@@ -8893,6 +9047,19 @@ function Osi.DB_CRIME_CancelOnFastTravel_Criminals:Delete(a0, a1) end
 ---@return {[1]: integer, [2]: CHARACTER}[] 
 function Osi.DB_CRIME_CancelOnFastTravel_Criminals:Get(a0, a1) end
 
+---@param a0 integer
+---@param a1 GUIDSTRING
+function Osi.DB_CRIME_CastedInCombat(a0, a1) end
+
+---@param a0 integer?
+---@param a1 GUIDSTRING?
+function Osi.DB_CRIME_CastedInCombat:Delete(a0, a1) end
+
+---@param a0 integer?
+---@param a1 GUIDSTRING?
+---@return {[1]: integer, [2]: GUIDSTRING}[] 
+function Osi.DB_CRIME_CastedInCombat:Get(a0, a1) end
+
 ---@param a0 CHARACTER
 ---@param a1 integer
 function Osi.DB_CRIME_Casting(a0, a1) end
@@ -8915,6 +9082,19 @@ function Osi.DB_CRIME_CheckForNewDisturbance_Found:Delete(a0) end
 ---@param a0 integer?
 ---@return {[1]: integer}[] 
 function Osi.DB_CRIME_CheckForNewDisturbance_Found:Get(a0) end
+
+---@param a0 integer
+---@param a1 integer
+function Osi.DB_CRIME_CleanupStoryActionIDOnLevelUnreachable(a0, a1) end
+
+---@param a0 integer?
+---@param a1 integer?
+function Osi.DB_CRIME_CleanupStoryActionIDOnLevelUnreachable:Delete(a0, a1) end
+
+---@param a0 integer?
+---@param a1 integer?
+---@return {[1]: integer, [2]: integer}[] 
+function Osi.DB_CRIME_CleanupStoryActionIDOnLevelUnreachable:Get(a0, a1) end
 
 ---@param a0 integer
 ---@param a1 number
@@ -15932,6 +16112,19 @@ function Osi.DB_CorpseCleanup_DeferredWait:Delete(a0, a1) end
 function Osi.DB_CorpseCleanup_DeferredWait:Get(a0, a1) end
 
 ---@param a0 CHARACTER
+---@param a1 GUIDSTRING
+function Osi.DB_CorpseCleanup_DeferredWait_ForLevel(a0, a1) end
+
+---@param a0 CHARACTER?
+---@param a1 GUIDSTRING?
+function Osi.DB_CorpseCleanup_DeferredWait_ForLevel:Delete(a0, a1) end
+
+---@param a0 CHARACTER?
+---@param a1 GUIDSTRING?
+---@return {[1]: CHARACTER, [2]: GUIDSTRING}[] 
+function Osi.DB_CorpseCleanup_DeferredWait_ForLevel:Get(a0, a1) end
+
+---@param a0 CHARACTER
 function Osi.DB_CorpseCleanup_Ignore(a0) end
 
 ---@param a0 CHARACTER?
@@ -15960,6 +16153,16 @@ function Osi.DB_CorpseCleanup_ReadyToBeRemoved:Delete(a0) end
 ---@param a0 CHARACTER?
 ---@return {[1]: CHARACTER}[] 
 function Osi.DB_CorpseCleanup_ReadyToBeRemoved:Get(a0) end
+
+---@param a0 CHARACTER
+function Osi.DB_CorpseCleanup_WaitForCorpse(a0) end
+
+---@param a0 CHARACTER?
+function Osi.DB_CorpseCleanup_WaitForCorpse:Delete(a0) end
+
+---@param a0 CHARACTER?
+---@return {[1]: CHARACTER}[] 
+function Osi.DB_CorpseCleanup_WaitForCorpse:Get(a0) end
 
 ---@param a0 CHARACTER
 function Osi.DB_CorpseLooting_CanBeOwned(a0) end
@@ -19798,16 +20001,6 @@ function Osi.DB_DEN_Guards_StorageKeyHolders:Delete(a0) end
 ---@return {[1]: CHARACTER}[] 
 function Osi.DB_DEN_Guards_StorageKeyHolders:Get(a0) end
 
----@param a0 integer
-function Osi.DB_DEN_HagTrader_DrinkFreePotion(a0) end
-
----@param a0 integer?
-function Osi.DB_DEN_HagTrader_DrinkFreePotion:Delete(a0) end
-
----@param a0 integer?
----@return {[1]: integer}[] 
-function Osi.DB_DEN_HagTrader_DrinkFreePotion:Get(a0) end
-
 ---@param a0 string
 function Osi.DB_DEN_HagTrader_LeaveSpeed(a0) end
 
@@ -22577,6 +22770,16 @@ function Osi.DB_Debug_ActWaypoints:Delete(a0) end
 ---@return {[1]: string}[] 
 function Osi.DB_Debug_ActWaypoints:Get(a0) end
 
+---@param a0 CHARACTER
+function Osi.DB_Debug_AddOrigin(a0) end
+
+---@param a0 CHARACTER?
+function Osi.DB_Debug_AddOrigin:Delete(a0) end
+
+---@param a0 CHARACTER?
+---@return {[1]: CHARACTER}[] 
+function Osi.DB_Debug_AddOrigin:Get(a0) end
+
 ---@param a0 FLAG
 ---@param a1 string
 function Osi.DB_Debug_ApplyStatus(a0, a1) end
@@ -24478,6 +24681,29 @@ function Osi.DB_DropMutingStatussesDialog:Delete(a0) end
 function Osi.DB_DropMutingStatussesDialog:Get(a0) end
 
 ---@param a0 ITEM
+---@param a1 ITEM
+function Osi.DB_DropdownLadder(a0, a1) end
+
+---@param a0 ITEM?
+---@param a1 ITEM?
+function Osi.DB_DropdownLadder:Delete(a0, a1) end
+
+---@param a0 ITEM?
+---@param a1 ITEM?
+---@return {[1]: ITEM, [2]: ITEM}[] 
+function Osi.DB_DropdownLadder:Get(a0, a1) end
+
+---@param a0 GUIDSTRING
+function Osi.DB_DrowAndCaptured_CombatResolution(a0) end
+
+---@param a0 GUIDSTRING?
+function Osi.DB_DrowAndCaptured_CombatResolution:Delete(a0) end
+
+---@param a0 GUIDSTRING?
+---@return {[1]: GUIDSTRING}[] 
+function Osi.DB_DrowAndCaptured_CombatResolution:Get(a0) end
+
+---@param a0 ITEM
 function Osi.DB_DruidLair_Opening(a0) end
 
 ---@param a0 ITEM?
@@ -24608,6 +24834,16 @@ function Osi.DB_END_AllyAbilities_CurrentCombat:Delete(a0) end
 ---@param a0 GUIDSTRING?
 ---@return {[1]: GUIDSTRING}[] 
 function Osi.DB_END_AllyAbilities_CurrentCombat:Get(a0) end
+
+---@param a0 CHARACTER
+function Osi.DB_END_AllyAbilities_FallbackTeleport(a0) end
+
+---@param a0 CHARACTER?
+function Osi.DB_END_AllyAbilities_FallbackTeleport:Delete(a0) end
+
+---@param a0 CHARACTER?
+---@return {[1]: CHARACTER}[] 
+function Osi.DB_END_AllyAbilities_FallbackTeleport:Get(a0) end
 
 ---@param a0 integer
 function Osi.DB_END_AllyAbilities_FiredAD(a0) end
@@ -25968,6 +26204,16 @@ function Osi.DB_END_GameFinale_FatesPositions:Delete(a0, a1) end
 ---@param a1 TRIGGER?
 ---@return {[1]: CHARACTER, [2]: TRIGGER}[] 
 function Osi.DB_END_GameFinale_FatesPositions:Get(a0, a1) end
+
+---@param a0 DIALOGRESOURCE
+function Osi.DB_END_GameFinale_NextQueuedDialog(a0) end
+
+---@param a0 DIALOGRESOURCE?
+function Osi.DB_END_GameFinale_NextQueuedDialog:Delete(a0) end
+
+---@param a0 DIALOGRESOURCE?
+---@return {[1]: DIALOGRESOURCE}[] 
+function Osi.DB_END_GameFinale_NextQueuedDialog:Get(a0) end
 
 ---@param a0 FLAG
 function Osi.DB_END_GameFinale_NoSeque(a0) end
@@ -28216,6 +28462,16 @@ function Osi.DB_END_SteelwatchAllyBeingResurrected:Delete(a0) end
 ---@return {[1]: integer}[] 
 function Osi.DB_END_SteelwatchAllyBeingResurrected:Get(a0) end
 
+---@param a0 integer
+function Osi.DB_END_TeleportedWeapon(a0) end
+
+---@param a0 integer?
+function Osi.DB_END_TeleportedWeapon:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_END_TeleportedWeapon:Get(a0) end
+
 ---@param a0 CHARACTER
 function Osi.DB_END_ToMorphicPool_BoatUser(a0) end
 
@@ -29712,6 +29968,16 @@ function Osi.DB_FOR_Courier_Dog_WaitUntilNextItem:Delete(a0) end
 ---@param a0 integer?
 ---@return {[1]: integer}[] 
 function Osi.DB_FOR_Courier_Dog_WaitUntilNextItem:Get(a0) end
+
+---@param a0 integer
+function Osi.DB_FOR_Courier_DropItemPositionSent(a0) end
+
+---@param a0 integer?
+function Osi.DB_FOR_Courier_DropItemPositionSent:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_FOR_Courier_DropItemPositionSent:Get(a0) end
 
 ---@param a0 TAG
 function Osi.DB_FOR_Courier_Fetch_Tags(a0) end
@@ -34655,6 +34921,16 @@ function Osi.DB_GLO_EmperorPrelude_NetherStoneTrackers:Delete(a0, a1, a2, a3, a4
 ---@return {[1]: ITEM, [2]: FLAG, [3]: FLAG, [4]: FLAG, [5]: FLAG, [6]: string}[] 
 function Osi.DB_GLO_EmperorPrelude_NetherStoneTrackers:Get(a0, a1, a2, a3, a4, a5) end
 
+---@param a0 integer
+function Osi.DB_GLO_EmperorPrelude_NetherstoneFishTeleported(a0) end
+
+---@param a0 integer?
+function Osi.DB_GLO_EmperorPrelude_NetherstoneFishTeleported:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_GLO_EmperorPrelude_NetherstoneFishTeleported:Get(a0) end
+
 ---@param a0 CHARACTER
 function Osi.DB_GLO_EmperorPrelude_ReadyIntermezzoEmperorAD(a0) end
 
@@ -36926,6 +37202,56 @@ function Osi.DB_GLO_OwlbearCub_CampNights:Delete(a0, a1) end
 ---@return {[1]: FLAG, [2]: DIALOGRESOURCE}[] 
 function Osi.DB_GLO_OwlbearCub_CampNights:Get(a0, a1) end
 
+---@param a0 FLAG
+function Osi.DB_GLO_PaladinMoments_AcceptedLastLightQuest(a0) end
+
+---@param a0 FLAG?
+function Osi.DB_GLO_PaladinMoments_AcceptedLastLightQuest:Delete(a0) end
+
+---@param a0 FLAG?
+---@return {[1]: FLAG}[] 
+function Osi.DB_GLO_PaladinMoments_AcceptedLastLightQuest:Get(a0) end
+
+---@param a0 integer
+function Osi.DB_GLO_PaladinMoments_MightBetrayLastLight(a0) end
+
+---@param a0 integer?
+function Osi.DB_GLO_PaladinMoments_MightBetrayLastLight:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_GLO_PaladinMoments_MightBetrayLastLight:Get(a0) end
+
+---@param a0 integer
+function Osi.DB_GLO_PaladinMoments_MightHelpKethericWithNightsong(a0) end
+
+---@param a0 integer?
+function Osi.DB_GLO_PaladinMoments_MightHelpKethericWithNightsong:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_GLO_PaladinMoments_MightHelpKethericWithNightsong:Get(a0) end
+
+---@param a0 integer
+function Osi.DB_GLO_PaladinMoments_WillBetrayLastLight(a0) end
+
+---@param a0 integer?
+function Osi.DB_GLO_PaladinMoments_WillBetrayLastLight:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_GLO_PaladinMoments_WillBetrayLastLight:Get(a0) end
+
+---@param a0 integer
+function Osi.DB_GLO_PaladinMoments_WillHelpKethericWithNightsong(a0) end
+
+---@param a0 integer?
+function Osi.DB_GLO_PaladinMoments_WillHelpKethericWithNightsong:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_GLO_PaladinMoments_WillHelpKethericWithNightsong:Get(a0) end
+
 ---@param a0 CHARACTER
 function Osi.DB_GLO_PaladinOathbreakerPath_KnightTalkedTo(a0) end
 
@@ -38350,6 +38676,88 @@ function Osi.DB_GLO_Spells_AnimateDead_Triggers:Delete(a0, a1, a2) end
 ---@return {[1]: string, [2]: TRIGGER, [3]: string}[] 
 function Osi.DB_GLO_Spells_AnimateDead_Triggers:Get(a0, a1, a2) end
 
+---@param a0 CHARACTER
+function Osi.DB_GLO_Spells_Bladesong(a0) end
+
+---@param a0 CHARACTER?
+function Osi.DB_GLO_Spells_Bladesong:Delete(a0) end
+
+---@param a0 CHARACTER?
+---@return {[1]: CHARACTER}[] 
+function Osi.DB_GLO_Spells_Bladesong:Get(a0) end
+
+---@param a0 CHARACTER
+---@param a1 ITEM
+---@param a2 string
+function Osi.DB_GLO_Spells_BladesongBlockingItem(a0, a1, a2) end
+
+---@param a0 CHARACTER?
+---@param a1 ITEM?
+---@param a2 string?
+function Osi.DB_GLO_Spells_BladesongBlockingItem:Delete(a0, a1, a2) end
+
+---@param a0 CHARACTER?
+---@param a1 ITEM?
+---@param a2 string?
+---@return {[1]: CHARACTER, [2]: ITEM, [3]: string}[] 
+function Osi.DB_GLO_Spells_BladesongBlockingItem:Get(a0, a1, a2) end
+
+---@param a0 string
+---@param a1 EQUIPMENTSLOT
+function Osi.DB_GLO_Spells_BladesongEquipSlots(a0, a1) end
+
+---@param a0 string?
+---@param a1 EQUIPMENTSLOT?
+function Osi.DB_GLO_Spells_BladesongEquipSlots:Delete(a0, a1) end
+
+---@param a0 string?
+---@param a1 EQUIPMENTSLOT?
+---@return {[1]: string, [2]: EQUIPMENTSLOT}[] 
+function Osi.DB_GLO_Spells_BladesongEquipSlots:Get(a0, a1) end
+
+---@param a0 string
+---@param a1 string
+function Osi.DB_GLO_Spells_BladesongProficiencyBlockers(a0, a1) end
+
+---@param a0 string?
+---@param a1 string?
+function Osi.DB_GLO_Spells_BladesongProficiencyBlockers:Delete(a0, a1) end
+
+---@param a0 string?
+---@param a1 string?
+---@return {[1]: string, [2]: string}[] 
+function Osi.DB_GLO_Spells_BladesongProficiencyBlockers:Get(a0, a1) end
+
+---@param a0 string
+function Osi.DB_GLO_Spells_BladesongStatuses(a0) end
+
+---@param a0 string?
+function Osi.DB_GLO_Spells_BladesongStatuses:Delete(a0) end
+
+---@param a0 string?
+---@return {[1]: string}[] 
+function Osi.DB_GLO_Spells_BladesongStatuses:Get(a0) end
+
+---@param a0 CHARACTER
+function Osi.DB_GLO_Spells_BladesongUnarmed(a0) end
+
+---@param a0 CHARACTER?
+function Osi.DB_GLO_Spells_BladesongUnarmed:Delete(a0) end
+
+---@param a0 CHARACTER?
+---@return {[1]: CHARACTER}[] 
+function Osi.DB_GLO_Spells_BladesongUnarmed:Get(a0) end
+
+---@param a0 TAG
+function Osi.DB_GLO_Spells_BladesongWeaponBlockers(a0) end
+
+---@param a0 TAG?
+function Osi.DB_GLO_Spells_BladesongWeaponBlockers:Delete(a0) end
+
+---@param a0 TAG?
+---@return {[1]: TAG}[] 
+function Osi.DB_GLO_Spells_BladesongWeaponBlockers:Get(a0) end
+
 ---@param a0 string
 function Osi.DB_GLO_Spells_DivineInterventionSpells(a0) end
 
@@ -38495,6 +38903,16 @@ function Osi.DB_GLO_Spells_FlamingSpheres:Delete(a0, a1) end
 ---@param a1 string?
 ---@return {[1]: GUIDSTRING, [2]: string}[] 
 function Osi.DB_GLO_Spells_FlamingSpheres:Get(a0, a1) end
+
+---@param a0 ITEM
+function Osi.DB_GLO_Spells_MagicArrowWeapon(a0) end
+
+---@param a0 ITEM?
+function Osi.DB_GLO_Spells_MagicArrowWeapon:Delete(a0) end
+
+---@param a0 ITEM?
+---@return {[1]: ITEM}[] 
+function Osi.DB_GLO_Spells_MagicArrowWeapon:Get(a0) end
 
 ---@param a0 string
 function Osi.DB_GLO_Spells_Portent_Challenges(a0) end
@@ -43118,6 +43536,39 @@ function Osi.DB_GUS31884_NeedToOverrideDialogue:Delete(a0) end
 ---@return {[1]: integer}[] 
 function Osi.DB_GUS31884_NeedToOverrideDialogue:Get(a0) end
 
+---@param a0 FLAG
+function Osi.DB_GUSX_12378_Night(a0) end
+
+---@param a0 FLAG?
+function Osi.DB_GUSX_12378_Night:Delete(a0) end
+
+---@param a0 FLAG?
+---@return {[1]: FLAG}[] 
+function Osi.DB_GUSX_12378_Night:Get(a0) end
+
+---@param a0 GUIDSTRING
+function Osi.DB_GUSX_12378_Night_Recovered(a0) end
+
+---@param a0 GUIDSTRING?
+function Osi.DB_GUSX_12378_Night_Recovered:Delete(a0) end
+
+---@param a0 GUIDSTRING?
+---@return {[1]: GUIDSTRING}[] 
+function Osi.DB_GUSX_12378_Night_Recovered:Get(a0) end
+
+---@param a0 FACTION
+---@param a1 string
+function Osi.DB_GUSX_9144_HeroFactions(a0, a1) end
+
+---@param a0 FACTION?
+---@param a1 string?
+function Osi.DB_GUSX_9144_HeroFactions:Delete(a0, a1) end
+
+---@param a0 FACTION?
+---@param a1 string?
+---@return {[1]: FACTION, [2]: string}[] 
+function Osi.DB_GUSX_9144_HeroFactions:Get(a0, a1) end
+
 ---@param a0 CHARACTER
 function Osi.DB_GUS_306683_Skipped(a0) end
 
@@ -45257,6 +45708,16 @@ function Osi.DB_HAV_ShadowCurse_BlessingReminders:Delete(a0) end
 function Osi.DB_HAV_ShadowCurse_BlessingReminders:Get(a0) end
 
 ---@param a0 integer
+function Osi.DB_HAV_ShadowSiege_Teleported(a0) end
+
+---@param a0 integer?
+function Osi.DB_HAV_ShadowSiege_Teleported:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_HAV_ShadowSiege_Teleported:Get(a0) end
+
+---@param a0 integer
 ---@param a1 GUIDSTRING
 function Osi.DB_HAV_Siege_CinematicCandidatesPos(a0, a1) end
 
@@ -46395,6 +46856,16 @@ function Osi.DB_Hirelings_DialogVars:Delete(a0, a1, a2) end
 function Osi.DB_Hirelings_DialogVars:Get(a0, a1, a2) end
 
 ---@param a0 CHARACTER
+function Osi.DB_Hirelings_DismissedHireling(a0) end
+
+---@param a0 CHARACTER?
+function Osi.DB_Hirelings_DismissedHireling:Delete(a0) end
+
+---@param a0 CHARACTER?
+---@return {[1]: CHARACTER}[] 
+function Osi.DB_Hirelings_DismissedHireling:Get(a0) end
+
+---@param a0 CHARACTER
 function Osi.DB_Hirelings_DismissedResurrection(a0) end
 
 ---@param a0 CHARACTER?
@@ -46664,6 +47135,16 @@ function Osi.DB_Hirelings_WaitForCreation:Delete(a0) end
 ---@param a0 CHARACTER?
 ---@return {[1]: CHARACTER}[] 
 function Osi.DB_Hirelings_WaitForCreation:Get(a0) end
+
+---@param a0 integer
+function Osi.DB_Hirelings_WaitForStatusRemoval(a0) end
+
+---@param a0 integer?
+function Osi.DB_Hirelings_WaitForStatusRemoval:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_Hirelings_WaitForStatusRemoval:Get(a0) end
 
 ---@param a0 integer
 function Osi.DB_HonorMode_Enabled(a0) end
@@ -50635,6 +51116,26 @@ function Osi.DB_LOW_BhaalTemple_Harpers:Delete(a0) end
 ---@return {[1]: CHARACTER}[] 
 function Osi.DB_LOW_BhaalTemple_Harpers:Get(a0) end
 
+---@param a0 CHARACTER
+function Osi.DB_LOW_BhaalTemple_HarpersWolfSpellUsed(a0) end
+
+---@param a0 CHARACTER?
+function Osi.DB_LOW_BhaalTemple_HarpersWolfSpellUsed:Delete(a0) end
+
+---@param a0 CHARACTER?
+---@return {[1]: CHARACTER}[] 
+function Osi.DB_LOW_BhaalTemple_HarpersWolfSpellUsed:Get(a0) end
+
+---@param a0 CHARACTER
+function Osi.DB_LOW_BhaalTemple_HarpersWoodlandSpellUsed(a0) end
+
+---@param a0 CHARACTER?
+function Osi.DB_LOW_BhaalTemple_HarpersWoodlandSpellUsed:Delete(a0) end
+
+---@param a0 CHARACTER?
+---@return {[1]: CHARACTER}[] 
+function Osi.DB_LOW_BhaalTemple_HarpersWoodlandSpellUsed:Get(a0) end
+
 ---@param a0 string
 ---@param a1 GUIDSTRING
 ---@param a2 GUIDSTRING
@@ -52404,6 +52905,16 @@ function Osi.DB_LOW_DockWarehouse_Fishers_SetAnubisConfig:Delete(a0) end
 ---@param a0 integer?
 ---@return {[1]: integer}[] 
 function Osi.DB_LOW_DockWarehouse_Fishers_SetAnubisConfig:Get(a0) end
+
+---@param a0 ITEM
+function Osi.DB_LOW_DockWarehouse_UsedResignationLetter(a0) end
+
+---@param a0 ITEM?
+function Osi.DB_LOW_DockWarehouse_UsedResignationLetter:Delete(a0) end
+
+---@param a0 ITEM?
+---@return {[1]: ITEM}[] 
+function Osi.DB_LOW_DockWarehouse_UsedResignationLetter:Get(a0) end
 
 ---@param a0 CHARACTER
 ---@param a1 GUIDSTRING
@@ -59746,6 +60257,16 @@ function Osi.DB_LOW_SorcerousSundries_PlayerTalkedToIsobelPostCaging:Delete(a0) 
 ---@return {[1]: integer}[] 
 function Osi.DB_LOW_SorcerousSundries_PlayerTalkedToIsobelPostCaging:Get(a0) end
 
+---@param a0 integer
+function Osi.DB_LOW_SorcerousSundries_PlayerTeleported(a0) end
+
+---@param a0 integer?
+function Osi.DB_LOW_SorcerousSundries_PlayerTeleported:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_LOW_SorcerousSundries_PlayerTeleported:Get(a0) end
+
 ---@param a0 CHARACTER
 function Osi.DB_LOW_SorcerousSundries_PlayerToMakeHostileToKlank(a0) end
 
@@ -59935,6 +60456,16 @@ function Osi.DB_LOW_SorcerousSundries_ReadyToResurrectKlank:Delete(a0) end
 ---@param a0 integer?
 ---@return {[1]: integer}[] 
 function Osi.DB_LOW_SorcerousSundries_ReadyToResurrectKlank:Get(a0) end
+
+---@param a0 integer
+function Osi.DB_LOW_SorcerousSundries_RolanKilledOffstage(a0) end
+
+---@param a0 integer?
+function Osi.DB_LOW_SorcerousSundries_RolanKilledOffstage:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_LOW_SorcerousSundries_RolanKilledOffstage:Get(a0) end
 
 ---@param a0 integer
 function Osi.DB_LOW_SorcerousSundries_RolanReachedRamaziths(a0) end
@@ -60674,6 +61205,16 @@ function Osi.DB_LOW_SteepsEvacuation_Characters:Delete(a0) end
 ---@return {[1]: GUIDSTRING}[] 
 function Osi.DB_LOW_SteepsEvacuation_Characters:Get(a0) end
 
+---@param a0 integer
+function Osi.DB_LOW_StolenGoldBeforeTraderDeath(a0) end
+
+---@param a0 integer?
+function Osi.DB_LOW_StolenGoldBeforeTraderDeath:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_LOW_StolenGoldBeforeTraderDeath:Get(a0) end
+
 ---@param a0 GUIDSTRING
 function Osi.DB_LOW_StormshoreTabernacle_Candles(a0) end
 
@@ -61030,6 +61571,16 @@ function Osi.DB_LOW_VampireAmbush_AfterCombatDialogQueued:Delete(a0) end
 ---@param a0 integer?
 ---@return {[1]: integer}[] 
 function Osi.DB_LOW_VampireAmbush_AfterCombatDialogQueued:Get(a0) end
+
+---@param a0 integer
+function Osi.DB_LOW_VampireAmbush_AstarionTeleported(a0) end
+
+---@param a0 integer?
+function Osi.DB_LOW_VampireAmbush_AstarionTeleported:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_LOW_VampireAmbush_AstarionTeleported:Get(a0) end
 
 ---@param a0 FLAG
 ---@param a1 DIALOGRESOURCE
@@ -62708,6 +63259,16 @@ function Osi.DB_MOO_Assault_NeutralGroups:Delete(a0) end
 ---@param a0 string?
 ---@return {[1]: string}[] 
 function Osi.DB_MOO_Assault_NeutralGroups:Get(a0) end
+
+---@param a0 integer
+function Osi.DB_MOO_Assault_NightsongAppeared(a0) end
+
+---@param a0 integer?
+function Osi.DB_MOO_Assault_NightsongAppeared:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_MOO_Assault_NightsongAppeared:Get(a0) end
 
 ---@param a0 TRIGGER
 function Osi.DB_MOO_Assault_NightsongFallTriggers(a0) end
@@ -64414,6 +64975,19 @@ function Osi.DB_MOO_KitchenFight_QtrMasterDisrupter:Delete(a0) end
 ---@return {[1]: GUIDSTRING}[] 
 function Osi.DB_MOO_KitchenFight_QtrMasterDisrupter:Get(a0) end
 
+---@param a0 CHARACTER
+---@param a1 CHARACTER
+function Osi.DB_MOO_MinatharaFate_Owner(a0, a1) end
+
+---@param a0 CHARACTER?
+---@param a1 CHARACTER?
+function Osi.DB_MOO_MinatharaFate_Owner:Delete(a0, a1) end
+
+---@param a0 CHARACTER?
+---@param a1 CHARACTER?
+---@return {[1]: CHARACTER, [2]: CHARACTER}[] 
+function Osi.DB_MOO_MinatharaFate_Owner:Get(a0, a1) end
+
 ---@param a0 integer
 function Osi.DB_MOO_MintharaFate_AttackMintharaOnSight(a0) end
 
@@ -65615,16 +66189,6 @@ function Osi.DB_NoLowAttitudeDialog:Delete(a0) end
 ---@return {[1]: CHARACTER}[] 
 function Osi.DB_NoLowAttitudeDialog:Get(a0) end
 
----@param a0 integer
-function Osi.DB_NormaliseAngle_Result(a0) end
-
----@param a0 integer?
-function Osi.DB_NormaliseAngle_Result:Delete(a0) end
-
----@param a0 integer?
----@return {[1]: integer}[] 
-function Osi.DB_NormaliseAngle_Result:Get(a0) end
-
 ---@param a0 CHARACTER
 ---@param a1 string
 function Osi.DB_NotifyWhenReadyToMoveOn(a0, a1) end
@@ -66225,6 +66789,19 @@ function Osi.DB_ORI_DarkUrge_GaleHand:Delete(a0) end
 ---@param a0 ITEM?
 ---@return {[1]: ITEM}[] 
 function Osi.DB_ORI_DarkUrge_GaleHand:Get(a0) end
+
+---@param a0 TAG
+---@param a1 FLAG
+function Osi.DB_ORI_DarkUrge_GenderFlags(a0, a1) end
+
+---@param a0 TAG?
+---@param a1 FLAG?
+function Osi.DB_ORI_DarkUrge_GenderFlags:Delete(a0, a1) end
+
+---@param a0 TAG?
+---@param a1 FLAG?
+---@return {[1]: TAG, [2]: FLAG}[] 
+function Osi.DB_ORI_DarkUrge_GenderFlags:Get(a0, a1) end
 
 ---@param a0 CHARACTER
 function Osi.DB_ORI_DarkUrge_LeastFavouriteCharacter(a0) end
@@ -66853,6 +67430,22 @@ function Osi.DB_ORI_Gale_GoalFlag:Get(a0, a1, a2) end
 
 ---@param a0 integer
 ---@param a1 integer
+---@param a2 FLAG
+function Osi.DB_ORI_Gale_GoalForceFlag(a0, a1, a2) end
+
+---@param a0 integer?
+---@param a1 integer?
+---@param a2 FLAG?
+function Osi.DB_ORI_Gale_GoalForceFlag:Delete(a0, a1, a2) end
+
+---@param a0 integer?
+---@param a1 integer?
+---@param a2 FLAG?
+---@return {[1]: integer, [2]: integer, [3]: FLAG}[] 
+function Osi.DB_ORI_Gale_GoalForceFlag:Get(a0, a1, a2) end
+
+---@param a0 integer
+---@param a1 integer
 function Osi.DB_ORI_Gale_GoalScore(a0, a1) end
 
 ---@param a0 integer?
@@ -67306,6 +67899,22 @@ function Osi.DB_ORI_Gale_Tara_InCampPlayers:Delete(a0) end
 ---@param a0 CHARACTER?
 ---@return {[1]: CHARACTER}[] 
 function Osi.DB_ORI_Gale_Tara_InCampPlayers:Get(a0) end
+
+---@param a0 number
+---@param a1 number
+---@param a2 number
+function Osi.DB_ORI_Gale_TeleportPosition(a0, a1, a2) end
+
+---@param a0 number?
+---@param a1 number?
+---@param a2 number?
+function Osi.DB_ORI_Gale_TeleportPosition:Delete(a0, a1, a2) end
+
+---@param a0 number?
+---@param a1 number?
+---@param a2 number?
+---@return {[1]: number, [2]: number, [3]: number}[] 
+function Osi.DB_ORI_Gale_TeleportPosition:Get(a0, a1, a2) end
 
 ---@param a0 integer
 function Osi.DB_ORI_Gale_Teleporting(a0) end
@@ -68827,6 +69436,16 @@ function Osi.DB_ORI_Wyll_Karlach_WarnedConfrontation:Delete(a0) end
 ---@return {[1]: integer}[] 
 function Osi.DB_ORI_Wyll_Karlach_WarnedConfrontation:Get(a0) end
 
+---@param a0 integer
+function Osi.DB_ORI_Wyll_MicoraRescuedRavengard(a0) end
+
+---@param a0 integer?
+function Osi.DB_ORI_Wyll_MicoraRescuedRavengard:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_ORI_Wyll_MicoraRescuedRavengard:Get(a0) end
+
 ---@param a0 GUIDSTRING
 function Osi.DB_ORI_Wyll_RelationshipDialogDone(a0) end
 
@@ -69766,6 +70385,16 @@ function Osi.DB_OskarsBeloved_ServantFiringChars:Delete(a0) end
 ---@param a0 GUIDSTRING?
 ---@return {[1]: GUIDSTRING}[] 
 function Osi.DB_OskarsBeloved_ServantFiringChars:Get(a0) end
+
+---@param a0 string
+function Osi.DB_OskarsBeloved_TorchInfoUpdates(a0) end
+
+---@param a0 string?
+function Osi.DB_OskarsBeloved_TorchInfoUpdates:Delete(a0) end
+
+---@param a0 string?
+---@return {[1]: string}[] 
+function Osi.DB_OskarsBeloved_TorchInfoUpdates:Get(a0) end
 
 ---@param a0 CHARACTER
 ---@param a1 CHARACTER
@@ -72359,6 +72988,16 @@ function Osi.DB_QRTN_SchoolOgreDebtCollection_GetNearestPlayer:Delete(a0, a1) en
 ---@return {[1]: CHARACTER, [2]: number}[] 
 function Osi.DB_QRTN_SchoolOgreDebtCollection_GetNearestPlayer:Get(a0, a1) end
 
+---@param a0 CHARACTER
+function Osi.DB_QRYRN_ReactToMoveDisappearAssault(a0) end
+
+---@param a0 CHARACTER?
+function Osi.DB_QRYRN_ReactToMoveDisappearAssault:Delete(a0) end
+
+---@param a0 CHARACTER?
+---@return {[1]: CHARACTER}[] 
+function Osi.DB_QRYRN_ReactToMoveDisappearAssault:Get(a0) end
+
 ---@param a0 integer
 function Osi.DB_QRYRTN_AnubisConfigOverrideIndex(a0) end
 
@@ -72655,6 +73294,16 @@ function Osi.DB_QRYRTN_CRIME_Guards_SpawnGuardGroup:Delete(a0) end
 ---@param a0 GUIDSTRING?
 ---@return {[1]: GUIDSTRING}[] 
 function Osi.DB_QRYRTN_CRIME_Guards_SpawnGuardGroup:Get(a0) end
+
+---@param a0 string
+function Osi.DB_QRYRTN_CRIME_MusicalPerformance_CorrectedSpellInfix(a0) end
+
+---@param a0 string?
+function Osi.DB_QRYRTN_CRIME_MusicalPerformance_CorrectedSpellInfix:Delete(a0) end
+
+---@param a0 string?
+---@return {[1]: string}[] 
+function Osi.DB_QRYRTN_CRIME_MusicalPerformance_CorrectedSpellInfix:Get(a0) end
 
 ---@param a0 TRIGGER
 function Osi.DB_QRYRTN_CRIME_Prison_ChosenCell(a0) end
@@ -74043,6 +74692,16 @@ function Osi.DB_QRYRTN_MOO_Roof_NearestPlayer:Delete(a0, a1) end
 ---@return {[1]: CHARACTER, [2]: number}[] 
 function Osi.DB_QRYRTN_MOO_Roof_NearestPlayer:Get(a0, a1) end
 
+---@param a0 number
+function Osi.DB_QRYRTN_NormaliseAngle(a0) end
+
+---@param a0 number?
+function Osi.DB_QRYRTN_NormaliseAngle:Delete(a0) end
+
+---@param a0 number?
+---@return {[1]: number}[] 
+function Osi.DB_QRYRTN_NormaliseAngle:Get(a0) end
+
 ---@param a0 string
 function Osi.DB_QRYRTN_ORI_DarkUrge_SlayerLevel(a0) end
 
@@ -74204,6 +74863,16 @@ function Osi.DB_QRYRTN_POM_FindNearestCompanion_Candidate:Delete(a0, a1) end
 ---@param a1 integer?
 ---@return {[1]: CHARACTER, [2]: integer}[] 
 function Osi.DB_QRYRTN_POM_FindNearestCompanion_Candidate:Get(a0, a1) end
+
+---@param a0 number
+function Osi.DB_QRYRTN_RealAbs(a0) end
+
+---@param a0 number?
+function Osi.DB_QRYRTN_RealAbs:Delete(a0) end
+
+---@param a0 number?
+---@return {[1]: number}[] 
+function Osi.DB_QRYRTN_RealAbs:Get(a0) end
 
 ---@param a0 CHARACTER
 function Osi.DB_QRYRTN_SCL_Drider_BestPlayerForAmbush(a0) end
@@ -78569,6 +79238,16 @@ function Osi.DB_SHA_EntrancePuzzle_RingsVFX:Delete(a0, a1, a2) end
 ---@return {[1]: string, [2]: EFFECTRESOURCE, [3]: FLAG}[] 
 function Osi.DB_SHA_EntrancePuzzle_RingsVFX:Get(a0, a1, a2) end
 
+---@param a0 integer
+function Osi.DB_SHA_LastJusticiar_Appeared(a0) end
+
+---@param a0 integer?
+function Osi.DB_SHA_LastJusticiar_Appeared:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_SHA_LastJusticiar_Appeared:Get(a0) end
+
 ---@param a0 GUIDSTRING
 function Osi.DB_SHA_LastJusticiar_CurrentUltimatumWaveMembers(a0) end
 
@@ -78641,6 +79320,16 @@ function Osi.DB_SHA_LastJusticiar_RatActive:Delete(a0, a1) end
 ---@param a1 ITEM?
 ---@return {[1]: CHARACTER, [2]: ITEM}[] 
 function Osi.DB_SHA_LastJusticiar_RatActive:Get(a0, a1) end
+
+---@param a0 integer
+function Osi.DB_SHA_LastJusticiar_RatAppeared(a0) end
+
+---@param a0 integer?
+function Osi.DB_SHA_LastJusticiar_RatAppeared:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_SHA_LastJusticiar_RatAppeared:Get(a0) end
 
 ---@param a0 ITEM
 ---@param a1 TRIGGER
@@ -78759,6 +79448,16 @@ function Osi.DB_SHA_Mausoleum_SecretDoors:Delete(a0) end
 ---@param a0 ITEM?
 ---@return {[1]: ITEM}[] 
 function Osi.DB_SHA_Mausoleum_SecretDoors:Get(a0) end
+
+---@param a0 integer
+function Osi.DB_SHA_Mausoleum_ShouldSetKnowsKethericFatherFlag(a0) end
+
+---@param a0 integer?
+function Osi.DB_SHA_Mausoleum_ShouldSetKnowsKethericFatherFlag:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_SHA_Mausoleum_ShouldSetKnowsKethericFatherFlag:Get(a0) end
 
 ---@param a0 integer
 function Osi.DB_SHA_Mausoleum_TrapTriggered(a0) end
@@ -79185,6 +79884,16 @@ function Osi.DB_SHA_OrthonLair_PartyDialogues:Delete(a0, a1) end
 ---@param a1 DIALOGRESOURCE?
 ---@return {[1]: CHARACTER, [2]: DIALOGRESOURCE}[] 
 function Osi.DB_SHA_OrthonLair_PartyDialogues:Get(a0, a1) end
+
+---@param a0 integer
+function Osi.DB_SHA_OrthonLair_RaphaelTeleported(a0) end
+
+---@param a0 integer?
+function Osi.DB_SHA_OrthonLair_RaphaelTeleported:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_SHA_OrthonLair_RaphaelTeleported:Get(a0) end
 
 ---@param a0 integer
 function Osi.DB_SHA_OrthonLair_StartCountingActiveMerregons(a0) end
@@ -81949,6 +82658,16 @@ function Osi.DB_SteelWatchFoundry_WreckedWatcher_Onlookers:Delete(a0) end
 ---@return {[1]: GUIDSTRING}[] 
 function Osi.DB_SteelWatchFoundry_WreckedWatcher_Onlookers:Get(a0) end
 
+---@param a0 integer
+function Osi.DB_SteelWatchFoundry_ZannerShouldReturn(a0) end
+
+---@param a0 integer?
+function Osi.DB_SteelWatchFoundry_ZannerShouldReturn:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_SteelWatchFoundry_ZannerShouldReturn:Get(a0) end
+
 ---@param a0 GUIDSTRING
 ---@param a1 integer
 function Osi.DB_StopDialogsWhenStarted(a0, a1) end
@@ -82910,6 +83629,16 @@ function Osi.DB_TUT_LowerDeck_GuideRecruitmentGoingOn:Delete(a0) end
 ---@param a0 integer?
 ---@return {[1]: integer}[] 
 function Osi.DB_TUT_LowerDeck_GuideRecruitmentGoingOn:Get(a0) end
+
+---@param a0 integer
+function Osi.DB_TUT_LowerDeck_Teleported(a0) end
+
+---@param a0 integer?
+function Osi.DB_TUT_LowerDeck_Teleported:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_TUT_LowerDeck_Teleported:Get(a0) end
 
 ---@param a0 CHARACTER
 function Osi.DB_TUT_LowerDeck_TeleportedToImpRoom(a0) end
@@ -84324,6 +85053,16 @@ function Osi.DB_TWN_MasonsGuild_Gratings:Delete(a0, a1, a2) end
 ---@return {[1]: ITEM, [2]: TRIGGER, [3]: GUIDSTRING}[] 
 function Osi.DB_TWN_MasonsGuild_Gratings:Get(a0, a1, a2) end
 
+---@param a0 integer
+function Osi.DB_TWN_MasonsGuild_ObjectTeleported(a0) end
+
+---@param a0 integer?
+function Osi.DB_TWN_MasonsGuild_ObjectTeleported:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_TWN_MasonsGuild_ObjectTeleported:Get(a0) end
+
 ---@param a0 TRIGGER
 function Osi.DB_TWN_MasonsGuild_PushObjectsAreas(a0) end
 
@@ -84376,6 +85115,16 @@ function Osi.DB_TWN_MorgueCliffLeverUnlocked:Delete(a0) end
 ---@param a0 integer?
 ---@return {[1]: integer}[] 
 function Osi.DB_TWN_MorgueCliffLeverUnlocked:Get(a0) end
+
+---@param a0 integer
+function Osi.DB_TWN_ShadowStones_Appeared(a0) end
+
+---@param a0 integer?
+function Osi.DB_TWN_ShadowStones_Appeared:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_TWN_ShadowStones_Appeared:Get(a0) end
 
 ---@param a0 CHARACTER
 ---@param a1 TRIGGER
@@ -86182,16 +86931,6 @@ function Osi.DB_UND_BroodingSovereign_WaitingForLeader:Delete(a0) end
 ---@return {[1]: CHARACTER}[] 
 function Osi.DB_UND_BroodingSovereign_WaitingForLeader:Get(a0) end
 
----@param a0 CHARACTER
-function Osi.DB_UND_BroodingSovereign_WaypointWait(a0) end
-
----@param a0 CHARACTER?
-function Osi.DB_UND_BroodingSovereign_WaypointWait:Delete(a0) end
-
----@param a0 CHARACTER?
----@return {[1]: CHARACTER}[] 
-function Osi.DB_UND_BroodingSovereign_WaypointWait:Get(a0) end
-
 ---@param a0 TRIGGER
 function Osi.DB_UND_BroodingSpovereign_FollowingRegions(a0) end
 
@@ -86201,6 +86940,16 @@ function Osi.DB_UND_BroodingSpovereign_FollowingRegions:Delete(a0) end
 ---@param a0 TRIGGER?
 ---@return {[1]: TRIGGER}[] 
 function Osi.DB_UND_BroodingSpovereign_FollowingRegions:Get(a0) end
+
+---@param a0 string
+function Osi.DB_UND_BroodingSpovereign_UnderdarkWaypoints(a0) end
+
+---@param a0 string?
+function Osi.DB_UND_BroodingSpovereign_UnderdarkWaypoints:Delete(a0) end
+
+---@param a0 string?
+---@return {[1]: string}[] 
+function Osi.DB_UND_BroodingSpovereign_UnderdarkWaypoints:Get(a0) end
 
 ---@param a0 integer
 function Osi.DB_UND_Bulette_BlockBurrowReaction(a0) end
@@ -86379,6 +87128,16 @@ function Osi.DB_UND_Bulette_SpawnZones:Delete(a0, a1, a2, a3) end
 ---@param a3 TRIGGER?
 ---@return {[1]: FLAG, [2]: CHARACTER, [3]: TRIGGER, [4]: TRIGGER}[] 
 function Osi.DB_UND_Bulette_SpawnZones:Get(a0, a1, a2, a3) end
+
+---@param a0 integer
+function Osi.DB_UND_Bulette_UsedJumpSpell(a0) end
+
+---@param a0 integer?
+function Osi.DB_UND_Bulette_UsedJumpSpell:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_UND_Bulette_UsedJumpSpell:Get(a0) end
 
 ---@param a0 CHARACTER
 function Osi.DB_UND_CaveIn_ExplosiveQuestUpdate(a0) end
@@ -93323,6 +94082,26 @@ function Osi.DB_WYR_Smugglers_Trap_StartedShooting:Delete(a0) end
 ---@param a0 integer?
 ---@return {[1]: integer}[] 
 function Osi.DB_WYR_Smugglers_Trap_StartedShooting:Get(a0) end
+
+---@param a0 integer
+function Osi.DB_WYR_SouthBridgeItemTeleported(a0) end
+
+---@param a0 integer?
+function Osi.DB_WYR_SouthBridgeItemTeleported:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_WYR_SouthBridgeItemTeleported:Get(a0) end
+
+---@param a0 integer
+function Osi.DB_WYR_SouthBridgePartyMemberTeleported(a0) end
+
+---@param a0 integer?
+function Osi.DB_WYR_SouthBridgePartyMemberTeleported:Delete(a0) end
+
+---@param a0 integer?
+---@return {[1]: integer}[] 
+function Osi.DB_WYR_SouthBridgePartyMemberTeleported:Get(a0) end
 
 ---@param a0 integer
 function Osi.DB_WYR_South_AccessGrantedPatched(a0) end

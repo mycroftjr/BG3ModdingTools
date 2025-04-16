@@ -245,6 +245,20 @@ function Osi.QRY_BG3_SavegamePatches_GUS319700_ValidNightDialog(a0) end
 ---@return boolean 
 function Osi.QRY_BG3_SavegamePatches_GUS319700_ValidNightDialog__DEF__(a0) end
 
+---@param a0 integer
+---@param a1 integer
+---@param a2 integer
+---@param a3 integer
+---@return boolean 
+function Osi.QRY_BG3_SavegameUndefinedOrIsOlderThan(a0, a1, a2, a3) end
+
+---@param a0 integer
+---@param a1 integer
+---@param a2 integer
+---@param a3 integer
+---@return boolean 
+function Osi.QRY_BG3_SavegameUndefinedOrIsOlderThan__DEF__(a0, a1, a2, a3) end
+
 ---@return boolean 
 function Osi.QRY_BUGFIX_308720_CheckShouldLorroTGExist() end
 
@@ -270,6 +284,12 @@ function Osi.QRY_BUGFIX_GUS306595_HasBusyDialog(a0) end
 ---@param a0 CHARACTER
 ---@return boolean 
 function Osi.QRY_BUGFIX_GUS306595_HasBusyDialog__DEF__(a0) end
+
+---@return boolean 
+function Osi.QRY_BUGFIX_GUSX_10239_NeedToDisableCrime() end
+
+---@return boolean 
+function Osi.QRY_BUGFIX_GUSX_10239_NeedToDisableCrime__DEF__() end
 
 ---@return boolean 
 function Osi.QRY_BUGFIX_GUSX_1257_NeedToFixDuergarCamp() end
@@ -396,6 +416,12 @@ function Osi.QRY_Bugfix_GUSX_591_CheckValidToMove(a0, a1) end
 ---@param a1 CHARACTER
 ---@return boolean 
 function Osi.QRY_Bugfix_GUSX_591_CheckValidToMove__DEF__(a0, a1) end
+
+---@return boolean 
+function Osi.QRY_Bugfix_GUSX_9480_CheckIRNStateAlreadyApplied() end
+
+---@return boolean 
+function Osi.QRY_Bugfix_GUSX_9480_CheckIRNStateAlreadyApplied__DEF__() end
 
 ---@param a0 GUIDSTRING
 ---@param a1 GUIDSTRING
@@ -1443,6 +1469,24 @@ function Osi.QRY_CRIME_CombatHasNonDownedPlayers(a0) end
 ---@return boolean 
 function Osi.QRY_CRIME_CombatHasNonDownedPlayers__DEF__(a0) end
 
+---@param a0 CHARACTER
+---@param a1 CHARACTER
+---@param a2 CHARACTER
+---@param a3 integer
+---@param a4 string
+---@param a5 integer
+---@return boolean 
+function Osi.QRY_CRIME_CountsAsAssaultOutOfCombat(a0, a1, a2, a3, a4, a5) end
+
+---@param a0 CHARACTER
+---@param a1 CHARACTER
+---@param a2 CHARACTER
+---@param a3 integer
+---@param a4 string
+---@param a5 integer
+---@return boolean 
+function Osi.QRY_CRIME_CountsAsAssaultOutOfCombat__DEF__(a0, a1, a2, a3, a4, a5) end
+
 ---@param a0 integer
 ---@return boolean 
 function Osi.QRY_CRIME_CrimeTypeResolveSourceInvestigation(a0) end
@@ -1985,6 +2029,14 @@ function Osi.QRY_CRIME_LookingForSuspects(a0, a1, a2) end
 ---@return boolean 
 function Osi.QRY_CRIME_LookingForSuspects__DEF__(a0, a1, a2) end
 
+---@param a0 string
+---@return boolean 
+function Osi.QRY_CRIME_MusicalPerformance_CorrectSpellInfix(a0) end
+
+---@param a0 string
+---@return boolean 
+function Osi.QRY_CRIME_MusicalPerformance_CorrectSpellInfix__DEF__(a0) end
+
 ---@param a0 integer
 ---@return boolean 
 function Osi.QRY_CRIME_NoImmediateInvestigationAbort(a0) end
@@ -2349,6 +2401,16 @@ function Osi.QRY_CRIME_StoryActionHandled_Specific__DEF__(a0, a1, a2, a3, a4, a5
 ---@return boolean 
 function Osi.QRY_CRIME_StoryActionHandled__DEF__(a0, a1, a2, a3, a4, a5) end
 
+---@param a0 integer
+---@param a1 GUIDSTRING
+---@return boolean 
+function Osi.QRY_CRIME_StoryActionID_OtherCombats(a0, a1) end
+
+---@param a0 integer
+---@param a1 GUIDSTRING
+---@return boolean 
+function Osi.QRY_CRIME_StoryActionID_OtherCombats__DEF__(a0, a1) end
+
 ---@param a0 number
 ---@param a1 number
 ---@param a2 number
@@ -2614,6 +2676,18 @@ function Osi.QRY_CampNight_MeetsRequirements_SameUser__DEF__(a0) end
 ---@param a0 FLAG
 ---@return boolean 
 function Osi.QRY_CampNight_MeetsRequirements_StartDating(a0) end
+
+---@param a0 FLAG
+---@param a1 CHARACTER
+---@param a2 CHARACTER
+---@return boolean 
+function Osi.QRY_CampNight_MeetsRequirements_StartDating_Approval(a0, a1, a2) end
+
+---@param a0 FLAG
+---@param a1 CHARACTER
+---@param a2 CHARACTER
+---@return boolean 
+function Osi.QRY_CampNight_MeetsRequirements_StartDating_Approval__DEF__(a0, a1, a2) end
 
 ---@param a0 FLAG
 ---@param a1 CHARACTER
@@ -5286,6 +5360,12 @@ function Osi.QRY_END_GameFinale_GithEggState_InCharacterWhoLeftFaerun(a0) end
 function Osi.QRY_END_GameFinale_GithEggState_InCharacterWhoLeftFaerun__DEF__(a0) end
 
 ---@return boolean 
+function Osi.QRY_END_GameFinale_MoreRomanceFatesToPlay() end
+
+---@return boolean 
+function Osi.QRY_END_GameFinale_MoreRomanceFatesToPlay__DEF__() end
+
+---@return boolean 
 function Osi.QRY_END_GameFinale_SkipSeque() end
 
 ---@return boolean 
@@ -7192,16 +7272,36 @@ function Osi.QRY_GLO_LevelSwap_CustomTransition__DEF__(a0, a1, a2) end
 function Osi.QRY_GLO_LevelSwap_IsPartyMemberUnavailable(a0) end
 
 ---@param a0 CHARACTER
+---@param a1 integer
+---@return boolean 
+function Osi.QRY_GLO_LevelSwap_IsPartyMemberUnavailable(a0, a1) end
+
+---@param a0 CHARACTER
 ---@return boolean 
 function Osi.QRY_GLO_LevelSwap_IsPartyMemberUnavailable__DEF__(a0) end
+
+---@param a0 CHARACTER
+---@param a1 integer
+---@return boolean 
+function Osi.QRY_GLO_LevelSwap_IsPartyMemberUnavailable__DEF__(a0, a1) end
 
 ---@param a0 CHARACTER
 ---@return boolean 
 function Osi.QRY_GLO_LevelSwap_IsPartyUnavailable(a0) end
 
 ---@param a0 CHARACTER
+---@param a1 integer
+---@return boolean 
+function Osi.QRY_GLO_LevelSwap_IsPartyUnavailable(a0, a1) end
+
+---@param a0 CHARACTER
 ---@return boolean 
 function Osi.QRY_GLO_LevelSwap_IsPartyUnavailable__DEF__(a0) end
+
+---@param a0 CHARACTER
+---@param a1 integer
+---@return boolean 
+function Osi.QRY_GLO_LevelSwap_IsPartyUnavailable__DEF__(a0, a1) end
 
 ---@param a0 ITEM
 ---@return boolean 
@@ -7289,6 +7389,22 @@ function Osi.QRY_GLO_Moonrise_KnowsAboutNereLantern() end
 ---@return boolean 
 function Osi.QRY_GLO_Moonrise_KnowsAboutNereLantern__DEF__() end
 
+---@param a0 TRIGGER
+---@return boolean 
+function Osi.QRY_GLO_NarrativeCombat_AnyLivingPartyMembersInRegion(a0) end
+
+---@param a0 TRIGGER
+---@return boolean 
+function Osi.QRY_GLO_NarrativeCombat_AnyLivingPartyMembersInRegion__DEF__(a0) end
+
+---@param a0 CHARACTER
+---@return boolean 
+function Osi.QRY_GLO_NarrativeCombat_IsDefeated(a0) end
+
+---@param a0 CHARACTER
+---@return boolean 
+function Osi.QRY_GLO_NarrativeCombat_IsDefeated__DEF__(a0) end
+
 ---@param a0 string
 ---@param a1 GUIDSTRING
 ---@return boolean 
@@ -7305,13 +7421,39 @@ function Osi.QRY_GLO_OrinControlGem_StartObjectiveReached() end
 ---@return boolean 
 function Osi.QRY_GLO_OrinControlGem_StartObjectiveReached__DEF__() end
 
----@param a0 CHARACTER
 ---@return boolean 
-function Osi.QRY_GLO_PaladinOathBreaker_BlockBreakingOath(a0) end
+function Osi.QRY_GLO_PaladinMoments_DevilishOxInMagicPockets() end
+
+---@return boolean 
+function Osi.QRY_GLO_PaladinMoments_DevilishOxInMagicPockets__DEF__() end
+
+---@return boolean 
+function Osi.QRY_GLO_PaladinMoments_GotMoonriseQuest() end
+
+---@return boolean 
+function Osi.QRY_GLO_PaladinMoments_GotMoonriseQuest__DEF__() end
+
+---@return boolean 
+function Osi.QRY_GLO_PaladinMoments_WillNotBetrayLastLight() end
+
+---@return boolean 
+function Osi.QRY_GLO_PaladinMoments_WillNotBetrayLastLight__DEF__() end
+
+---@return boolean 
+function Osi.QRY_GLO_PaladinMoments_WillNotHelpKethericWithNightsong() end
+
+---@return boolean 
+function Osi.QRY_GLO_PaladinMoments_WillNotHelpKethericWithNightsong__DEF__() end
 
 ---@param a0 CHARACTER
+---@param a1 CHARACTER
 ---@return boolean 
-function Osi.QRY_GLO_PaladinOathBreaker_BlockBreakingOath__DEF__(a0) end
+function Osi.QRY_GLO_PaladinOathBreaker_BlockBreakingOath(a0, a1) end
+
+---@param a0 CHARACTER
+---@param a1 CHARACTER
+---@return boolean 
+function Osi.QRY_GLO_PaladinOathBreaker_BlockBreakingOath__DEF__(a0, a1) end
 
 ---@param a0 CHARACTER
 ---@return boolean 
@@ -7777,6 +7919,14 @@ function Osi.QRY_GLO_Spells_BecomesEvilAfterStatus(a0, a1) end
 ---@return boolean 
 function Osi.QRY_GLO_Spells_BecomesEvilAfterStatus__DEF__(a0, a1) end
 
+---@param a0 ITEM
+---@return boolean 
+function Osi.QRY_GLO_Spells_HasBladesongWeaponTags(a0) end
+
+---@param a0 ITEM
+---@return boolean 
+function Osi.QRY_GLO_Spells_HasBladesongWeaponTags__DEF__(a0) end
+
 ---@param a0 CHARACTER
 ---@return boolean 
 function Osi.QRY_GLO_Spells_IgnoreFriendlyFire(a0) end
@@ -7784,6 +7934,26 @@ function Osi.QRY_GLO_Spells_IgnoreFriendlyFire(a0) end
 ---@param a0 CHARACTER
 ---@return boolean 
 function Osi.QRY_GLO_Spells_IgnoreFriendlyFire__DEF__(a0) end
+
+---@param a0 CHARACTER
+---@return boolean 
+function Osi.QRY_GLO_Spells_IsCharacterArmed(a0) end
+
+---@param a0 CHARACTER
+---@return boolean 
+function Osi.QRY_GLO_Spells_IsCharacterArmed__DEF__(a0) end
+
+---@param a0 CHARACTER
+---@param a1 ITEM
+---@param a2 string
+---@return boolean 
+function Osi.QRY_GLO_Spells_OtherBlockingItem(a0, a1, a2) end
+
+---@param a0 CHARACTER
+---@param a1 ITEM
+---@param a2 string
+---@return boolean 
+function Osi.QRY_GLO_Spells_OtherBlockingItem__DEF__(a0, a1, a2) end
 
 ---@param a0 ITEM
 ---@return boolean 
@@ -7986,6 +8156,12 @@ function Osi.QRY_GOB_AnyPlayerInGoblinTemple() end
 
 ---@return boolean 
 function Osi.QRY_GOB_AnyPlayerInGoblinTemple__DEF__() end
+
+---@return boolean 
+function Osi.QRY_GOB_BUGFIX_IsExecutionerDead() end
+
+---@return boolean 
+function Osi.QRY_GOB_BUGFIX_IsExecutionerDead__DEF__() end
 
 ---@param a0 GUIDSTRING
 ---@return boolean 
@@ -8516,10 +8692,42 @@ function Osi.QRY_GOB_WolfPens_Imprisoned() end
 function Osi.QRY_GOB_WolfPens_Imprisoned__DEF__() end
 
 ---@return boolean 
+function Osi.QRY_GUSX_12378_MizorasJudgement_Recover() end
+
+---@return boolean 
+function Osi.QRY_GUSX_12378_MizorasJudgement_Recover__DEF__() end
+
+---@param a0 FLAG
+---@return boolean 
+function Osi.QRY_GUSX_12378_Night_Recover(a0) end
+
+---@param a0 FLAG
+---@return boolean 
+function Osi.QRY_GUSX_12378_Night_Recover__DEF__(a0) end
+
+---@return boolean 
+function Osi.QRY_GUSX_12378_Wyll_MizorasJudgement() end
+
+---@return boolean 
+function Osi.QRY_GUSX_12378_Wyll_MizorasJudgement__DEF__() end
+
+---@return boolean 
+function Osi.QRY_GUSX_12566_IsRogerOutWineFestivalIfCoraDies() end
+
+---@return boolean 
+function Osi.QRY_GUSX_12566_IsRogerOutWineFestivalIfCoraDies__DEF__() end
+
+---@return boolean 
 function Osi.QRY_GUSX_7116_UsInColony() end
 
 ---@return boolean 
 function Osi.QRY_GUSX_7116_UsInColony__DEF__() end
+
+---@return boolean 
+function Osi.QRY_GUSX_8382_CheckOskarWrongStatuses() end
+
+---@return boolean 
+function Osi.QRY_GUSX_8382_CheckOskarWrongStatuses__DEF__() end
 
 ---@param a0 CHARACTER
 ---@return boolean 
@@ -8959,6 +9167,14 @@ function Osi.QRY_GithChokepoint_SetHookPlayer(a0, a1) end
 ---@return boolean 
 function Osi.QRY_GithChokepoint_SetHookPlayer__DEF__(a0, a1) end
 
+---@param a0 FLAG
+---@return boolean 
+function Osi.QRY_GlobalFlagSetOrNull(a0) end
+
+---@param a0 FLAG
+---@return boolean 
+function Osi.QRY_GlobalFlagSetOrNull__DEF__(a0) end
+
 ---@param a0 CHARACTER
 ---@param a1 VOICEBARKRESOURCE
 ---@return boolean 
@@ -9142,6 +9358,12 @@ function Osi.QRY_HAG_Hagspawn_HusbandResurrecterDialog() end
 
 ---@return boolean 
 function Osi.QRY_HAG_Hagspawn_HusbandResurrecterDialog__DEF__() end
+
+---@return boolean 
+function Osi.QRY_HAG_Lair_HasNearbyThreat() end
+
+---@return boolean 
+function Osi.QRY_HAG_Lair_HasNearbyThreat__DEF__() end
 
 ---@param a0 CHARACTER
 ---@return boolean 
@@ -11421,6 +11643,14 @@ function Osi.QRY_LOW_SorcerousSundries_ClerkWantsToWarn__DEF__(a0) end
 
 ---@param a0 GUIDSTRING
 ---@return boolean 
+function Osi.QRY_LOW_SorcerousSundries_ConsciousPlayersInRT(a0) end
+
+---@param a0 GUIDSTRING
+---@return boolean 
+function Osi.QRY_LOW_SorcerousSundries_ConsciousPlayersInRT__DEF__(a0) end
+
+---@param a0 GUIDSTRING
+---@return boolean 
 function Osi.QRY_LOW_SorcerousSundries_GetSpeakerForLorroakanInteraction(a0) end
 
 ---@param a0 GUIDSTRING
@@ -11877,15 +12107,13 @@ function Osi.QRY_MOO_BossFight_ResetNearestNightsongReturnTrigger() end
 ---@return boolean 
 function Osi.QRY_MOO_BossFight_ResetNearestNightsongReturnTrigger__DEF__() end
 
----@param a0 TRIGGER
----@param a1 CHARACTER
+---@param a0 CHARACTER
 ---@return boolean 
-function Osi.QRY_MOO_Crimes_IsAccompaniedByEscort(a0, a1) end
+function Osi.QRY_MOO_Crimes_IsAccompaniedByEscort(a0) end
 
----@param a0 TRIGGER
----@param a1 CHARACTER
+---@param a0 CHARACTER
 ---@return boolean 
-function Osi.QRY_MOO_Crimes_IsAccompaniedByEscort__DEF__(a0, a1) end
+function Osi.QRY_MOO_Crimes_IsAccompaniedByEscort__DEF__(a0) end
 
 ---@return boolean 
 function Osi.QRY_MOO_Execution_AnyADInQueue() end
@@ -12103,11 +12331,11 @@ function Osi.QRY_NonAnimalNPCCaresAboutVictim(a0, a1, a2) end
 ---@return boolean 
 function Osi.QRY_NonAnimalNPCCaresAboutVictim__DEF__(a0, a1, a2) end
 
----@param a0 integer
+---@param a0 number
 ---@return boolean 
 function Osi.QRY_NormaliseAngle(a0) end
 
----@param a0 integer
+---@param a0 number
 ---@return boolean 
 function Osi.QRY_NormaliseAngle__DEF__(a0) end
 
@@ -14003,6 +14231,24 @@ function Osi.QRY_Ravengard_WaitingToBeRescued() end
 ---@return boolean 
 function Osi.QRY_Ravengard_WaitingToBeRescued__DEF__() end
 
+---@param a0 CHARACTER
+---@param a1 CHARACTER
+---@param a2 CHARACTER
+---@param a3 integer
+---@param a4 string
+---@param a5 integer
+---@return boolean 
+function Osi.QRY_ReactToMoveDisappearAssault(a0, a1, a2, a3, a4, a5) end
+
+---@param a0 CHARACTER
+---@param a1 CHARACTER
+---@param a2 CHARACTER
+---@param a3 integer
+---@param a4 string
+---@param a5 integer
+---@return boolean 
+function Osi.QRY_ReactToMoveDisappearAssault__DEF__(a0, a1, a2, a3, a4, a5) end
+
 ---@param a0 number
 ---@param a1 number
 ---@param a2 number
@@ -14040,6 +14286,14 @@ function Osi.QRY_Real3CompareWithThreshold__DEF__(a0, a1, a2, a3, a4, a5, a6) en
 ---@param a5 number
 ---@return boolean 
 function Osi.QRY_Real3Compare__DEF__(a0, a1, a2, a3, a4, a5) end
+
+---@param a0 number
+---@return boolean 
+function Osi.QRY_RealAbs(a0) end
+
+---@param a0 number
+---@return boolean 
+function Osi.QRY_RealAbs__DEF__(a0) end
 
 ---@param a0 number
 ---@param a1 number
@@ -14688,6 +14942,16 @@ function Osi.QRY_SHA_Mausoleum_MuralHasPuzzleStatus(a0) end
 ---@param a0 ITEM
 ---@return boolean 
 function Osi.QRY_SHA_Mausoleum_MuralHasPuzzleStatus__DEF__(a0) end
+
+---@param a0 CHARACTER
+---@param a1 CHARACTER
+---@return boolean 
+function Osi.QRY_SHA_MirrorEncounter_HasOfficialClass(a0, a1) end
+
+---@param a0 CHARACTER
+---@param a1 CHARACTER
+---@return boolean 
+function Osi.QRY_SHA_MirrorEncounter_HasOfficialClass__DEF__(a0, a1) end
 
 ---@param a0 CHARACTER
 ---@return boolean 
@@ -17406,6 +17670,14 @@ function Osi.QRY_UND_ArcaneTower_SecretWall_Open() end
 function Osi.QRY_UND_ArcaneTower_SecretWall_Open__DEF__() end
 
 ---@param a0 CHARACTER
+---@return boolean 
+function Osi.QRY_UND_BroodingSovereign_GoHomeQRY(a0) end
+
+---@param a0 CHARACTER
+---@return boolean 
+function Osi.QRY_UND_BroodingSovereign_GoHomeQRY__DEF__(a0) end
+
+---@param a0 CHARACTER
 ---@param a1 CHARACTER
 ---@return boolean 
 function Osi.QRY_UND_BroodingSovereign_HimselfOrLeadersMinion(a0, a1) end
@@ -17414,6 +17686,18 @@ function Osi.QRY_UND_BroodingSovereign_HimselfOrLeadersMinion(a0, a1) end
 ---@param a1 CHARACTER
 ---@return boolean 
 function Osi.QRY_UND_BroodingSovereign_HimselfOrLeadersMinion__DEF__(a0, a1) end
+
+---@param a0 DIALOGRESOURCE
+---@param a1 CHARACTER
+---@param a2 CHARACTER
+---@return boolean 
+function Osi.QRY_UND_BroodingSovereign_LeaveDialog(a0, a1, a2) end
+
+---@param a0 DIALOGRESOURCE
+---@param a1 CHARACTER
+---@param a2 CHARACTER
+---@return boolean 
+function Osi.QRY_UND_BroodingSovereign_LeaveDialog__DEF__(a0, a1, a2) end
 
 ---@param a0 GUIDSTRING
 ---@param a1 CHARACTER
@@ -17425,13 +17709,21 @@ function Osi.QRY_UND_BroodingSovereign_NeedsToStopPlayer(a0, a1) end
 ---@return boolean 
 function Osi.QRY_UND_BroodingSovereign_NeedsToStopPlayer__DEF__(a0, a1) end
 
----@param a0 GUIDSTRING
+---@param a0 CHARACTER
 ---@return boolean 
 function Osi.QRY_UND_BroodingSovereign_StillUND(a0) end
 
----@param a0 GUIDSTRING
+---@param a0 CHARACTER
 ---@return boolean 
 function Osi.QRY_UND_BroodingSovereign_StillUND__DEF__(a0) end
+
+---@param a0 TRIGGER
+---@return boolean 
+function Osi.QRY_UND_BroodingSovereign_WaypointInUND(a0) end
+
+---@param a0 TRIGGER
+---@return boolean 
+function Osi.QRY_UND_BroodingSovereign_WaypointInUND__DEF__(a0) end
 
 ---@return boolean 
 function Osi.QRY_UND_Bulette_CanAppear() end
@@ -17472,6 +17764,12 @@ function Osi.QRY_UND_DeadInTheWater_DuergarsNotInTheArea() end
 
 ---@return boolean 
 function Osi.QRY_UND_DeadInTheWater_DuergarsNotInTheArea__DEF__() end
+
+---@return boolean 
+function Osi.QRY_UND_DuergarCamp_AnyMutinySidePicked() end
+
+---@return boolean 
+function Osi.QRY_UND_DuergarCamp_AnyMutinySidePicked__DEF__() end
 
 ---@param a0 CHARACTER
 ---@return boolean 
@@ -17816,6 +18114,14 @@ function Osi.QRY_UnlockWaypoint_AlreadyUnlockedForParty(a0, a1) end
 ---@param a1 CHARACTER
 ---@return boolean 
 function Osi.QRY_UnlockWaypoint_AlreadyUnlockedForParty__DEF__(a0, a1) end
+
+---@param a0 CHARACTER
+---@return boolean 
+function Osi.QRY_UnwelcomeVisitors_IsInMOO(a0) end
+
+---@param a0 CHARACTER
+---@return boolean 
+function Osi.QRY_UnwelcomeVisitors_IsInMOO__DEF__(a0) end
 
 ---@param a0 DIALOGRESOURCE
 ---@param a1 CHARACTER
