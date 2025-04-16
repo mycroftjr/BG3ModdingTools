@@ -540,6 +540,19 @@ if Osi == nil then Osi = {{}} end
     output_str = osi_template.format(types=types_str, aliases=aliases_str, enums=enums_str, queries=queries_str, calls=calls_str)
 
     export_file(output_path, output_str)
+
+    def export(defs, file):
+        defs_str = ""
+        for func in defs:	
+            defs_str += '{}\n'.format(func.export())
+
+        output_str = f"""---@meta
+---@diagnostic disable
+
+if Osi == nil then Osi = {{}} end
+{defs_str}"""
+
+        export_file(output_path.parent.joinpath(file), output_str)
     
     if len(event_definitions) > 0:
         events_callbacks_str = ""
